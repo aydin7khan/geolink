@@ -1,0 +1,1032 @@
+/* ============================================
+   GEOLINK SURVEY - SERVICES PAGE STYLES
+   THEME: Navy Blue (#1a365d, #0f172a) + Orange (#ea580c, #f97316)
+   PROFESSIONAL AGENCY DESIGN WITH IMAGES & ANIMATIONS
+   ============================================ */
+
+   .srv-page {
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .srv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .srv-section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .srv-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background: linear-gradient(90deg, #ea580c, #f97316);
+    border-radius: 5px;
+  }
+  
+  /* ============================================
+     HERO SECTION WITH BACKGROUND IMAGE
+     ============================================ */
+  .srv-hero-section {
+    position: relative;
+    color: #ffffff;
+    padding: 120px 20px 100px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .srv-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .srv-hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .srv-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.92) 0%, rgba(15, 23, 42, 0.90) 100%);
+    z-index: 1;
+  }
+  
+  .srv-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .srv-hero-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .srv-hero-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.95;
+    color: #fed7aa;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ============================================
+     SERVICES OVERVIEW SECTION (NO CHANGES)
+     ============================================ */
+  .srv-overview-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .srv-overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .srv-overview-text {
+    margin-top: 40px;
+  }
+  
+  .srv-overview-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* ============================================
+     OUR EXPERTISE SECTION - 6 KEY SERVICES
+     ============================================ */
+  .srv-expertise-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .srv-expertise-intro {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #6b7280;
+    max-width: 700px;
+    margin: 25px auto 60px;
+  }
+  
+  .srv-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+  }
+  
+  .srv-expertise-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+  }
+  
+  .srv-expertise-card:hover {
+    box-shadow: 0 16px 40px rgba(234, 88, 12, 0.18);
+    border-color: #ea580c;
+    transform: translateY(-8px);
+  }
+  
+  .srv-expertise-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+  }
+  
+  .srv-expertise-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .srv-expertise-card:hover .srv-expertise-image {
+    transform: scale(1.1);
+  }
+  
+  .srv-expertise-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(26, 54, 93, 0.75) 100%);
+    transition: opacity 0.4s ease;
+  }
+  
+  .srv-expertise-card:hover .srv-expertise-image-overlay {
+    opacity: 0.9;
+  }
+  
+  .srv-expertise-icon-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 16px rgba(234, 88, 12, 0.5);
+    z-index: 2;
+    transition: transform 0.3s ease;
+  }
+  
+  .srv-expertise-card:hover .srv-expertise-icon-badge {
+    transform: rotate(10deg) scale(1.15);
+  }
+  
+  .srv-expertise-content {
+    padding: 30px 28px;
+  }
+  
+  .srv-expertise-title {
+    font-size: 23px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+  
+  .srv-expertise-description {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+  }
+  
+  /* ============================================
+     TRUST INDICATORS / STATS SECTION
+     ============================================ */
+  .srv-trust-section {
+    padding: 70px 20px;
+    background-color: #ffffff;
+  }
+  
+  .srv-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .srv-trust-card {
+    background-color: #f8f9fb;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-top: 4px solid #ea580c;
+  }
+  
+  .srv-trust-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.15);
+    border-color: #fed7aa;
+    background-color: #ffffff;
+  }
+  
+  .srv-trust-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ea580c;
+    margin-bottom: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 2px 6px rgba(234, 88, 12, 0.2));
+  }
+  
+  .srv-trust-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 8px;
+  }
+  
+  .srv-trust-desc {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* ============================================
+     ALL 27 SERVICES SECTION
+     ============================================ */
+  .srv-all-services-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .srv-all-services-intro {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #6b7280;
+    max-width: 700px;
+    margin: 25px auto 60px;
+  }
+  
+  .srv-all-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+  }
+  
+  .srv-service-card-new {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+    position: relative;
+  }
+  
+  .srv-service-card-new:hover {
+    box-shadow: 0 16px 40px rgba(234, 88, 12, 0.15);
+    border-color: #ea580c;
+    transform: translateY(-8px);
+  }
+  
+  .srv-service-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+  }
+  
+  .srv-service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease;
+  }
+  
+  .srv-service-card-new:hover .srv-service-image {
+    transform: scale(1.08);
+  }
+  
+  .srv-service-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(26, 54, 93, 0.7) 100%);
+    transition: opacity 0.4s ease;
+  }
+  
+  .srv-service-card-new:hover .srv-service-image-overlay {
+    opacity: 0.85;
+  }
+  
+  .srv-service-icon-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.4);
+    z-index: 2;
+    transition: transform 0.3s ease;
+  }
+  
+  .srv-service-card-new:hover .srv-service-icon-badge {
+    transform: rotate(8deg) scale(1.1);
+  }
+  
+  .srv-service-content {
+    padding: 28px 25px;
+  }
+  
+  .srv-service-title-new {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 14px;
+    line-height: 1.3;
+  }
+  
+  .srv-service-description-new {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    min-height: 85px;
+  }
+  
+  .srv-inquire-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #ea580c;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: 2px solid #ea580c;
+  }
+  
+  .srv-inquire-btn:hover {
+    background-color: #c2410c;
+    border-color: #c2410c;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+  }
+  
+  .srv-inquire-arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .srv-inquire-btn:hover .srv-inquire-arrow {
+    transform: translateX(4px);
+  }
+  
+  /* ============================================
+     INDUSTRIES SERVED - 2 COLUMNS LAYOUT
+     ============================================ */
+  .srv-industries-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .srv-industries-intro {
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+    max-width: 800px;
+    margin: 30px auto 50px;
+  }
+  
+  .srv-industries-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .srv-industry-card {
+    background-color: #f8f9fb;
+    padding: 40px 35px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .srv-industry-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ea580c, #f97316);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+  }
+  
+  .srv-industry-card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .srv-industry-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(234, 88, 12, 0.12);
+    border-color: #fed7aa;
+    background-color: #ffffff;
+  }
+  
+  .srv-industry-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    display: block;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+  }
+  
+  .srv-industry-card:hover .srv-industry-icon {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  
+  .srv-industry-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 15px;
+  }
+  
+  .srv-industry-description {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.8;
+  }
+  
+  /* ============================================
+     WHY CHOOSE GEOLINK SECTION
+     ============================================ */
+  .srv-why-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .srv-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+  }
+  
+  .srv-why-card {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .srv-why-card:hover {
+    border-color: #ea580c;
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  .srv-why-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.1));
+  }
+  
+  .srv-why-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 12px;
+  }
+  
+  .srv-why-description {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+  }
+  
+  /* ============================================
+     CALL TO ACTION SECTION
+     ============================================ */
+  .srv-cta-section {
+    background: linear-gradient(135deg, #1a365d 0%, #0f172a 100%);
+    padding: 90px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .srv-cta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .srv-cta-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 30% 50%, rgba(234, 88, 12, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(249, 115, 22, 0.15) 0%, transparent 50%);
+    animation: srv-pattern-float 10s ease-in-out infinite alternate;
+  }
+  
+  @keyframes srv-pattern-float {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(20px, 20px) scale(1.05); }
+  }
+  
+  .srv-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .srv-cta-icon {
+    font-size: 72px;
+    margin-bottom: 20px;
+    animation: srv-icon-bounce 2s ease-in-out infinite;
+    filter: drop-shadow(0 4px 12px rgba(234, 88, 12, 0.3));
+  }
+  
+  @keyframes srv-icon-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .srv-cta-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  
+  .srv-cta-text {
+    font-size: 18px;
+    color: #fed7aa;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  
+  .srv-cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .srv-cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .srv-cta-feature-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ea580c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .srv-cta-subtext {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fed7aa;
+    font-style: italic;
+  }
+  
+  /* ============================================
+     BUTTON STYLES
+     ============================================ */
+  .srv-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .srv-btn-large {
+    padding: 16px 40px;
+    font-size: 18px;
+  }
+  
+  .srv-btn-cta-main {
+    background-color: #ea580c;
+    color: #ffffff;
+    border-color: #ea580c;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .srv-btn-arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .srv-btn-cta-main:hover .srv-btn-arrow {
+    transform: translateX(5px);
+  }
+  
+  .srv-btn-cta-main:hover {
+    background-color: #c2410c;
+    border-color: #c2410c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(234, 88, 12, 0.3);
+  }
+  
+  /* ============================================
+     RESPONSIVE DESIGN
+     ============================================ */
+  
+  @media (max-width: 1200px) {
+    .srv-all-services-grid,
+    .srv-expertise-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .srv-hero-title { font-size: 42px; }
+    .srv-hero-subtitle { font-size: 18px; }
+    .srv-section-title { font-size: 32px; }
+    .srv-cta-title { font-size: 36px; }
+    .srv-cta-icon { font-size: 60px; }
+    
+    .srv-industries-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .srv-all-services-grid,
+    .srv-expertise-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .srv-trust-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .srv-hero-section { 
+      padding: 80px 20px; 
+      min-height: 380px; 
+    }
+    
+    .srv-hero-title { font-size: 34px; }
+    .srv-hero-subtitle { font-size: 16px; }
+    .srv-section-title { font-size: 28px; margin-bottom: 15px; }
+    
+    .srv-overview-section,
+    .srv-expertise-section,
+    .srv-trust-section,
+    .srv-all-services-section,
+    .srv-industries-section,
+    .srv-why-section {
+      padding: 60px 20px;
+    }
+    
+    .srv-overview-text p,
+    .srv-industries-intro,
+    .srv-all-services-intro,
+    .srv-expertise-intro {
+      font-size: 16px;
+      text-align: center;
+    }
+    
+    .srv-all-services-grid,
+    .srv-expertise-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    
+    .srv-service-card-new,
+    .srv-expertise-card {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    .srv-service-image-wrapper,
+    .srv-expertise-image-wrapper {
+      height: 200px;
+    }
+    
+    .srv-service-content,
+    .srv-expertise-content {
+      padding: 25px 22px;
+    }
+    
+    .srv-service-description-new,
+    .srv-expertise-description {
+      min-height: auto;
+    }
+    
+    .srv-trust-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    
+    .srv-trust-card {
+      padding: 30px 25px;
+    }
+    
+    .srv-trust-number {
+      font-size: 40px;
+    }
+    
+    .srv-industries-grid,
+    .srv-why-grid {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    
+    .srv-industry-card,
+    .srv-why-card {
+      padding: 30px 25px;
+    }
+    
+    .srv-industry-icon {
+      font-size: 56px;
+    }
+    
+    .srv-cta-section { padding: 70px 20px; }
+    .srv-cta-icon { font-size: 56px; }
+    .srv-cta-title { font-size: 28px; }
+    .srv-cta-text { font-size: 16px; }
+    .srv-cta-features { flex-direction: column; gap: 15px; }
+  }
+  
+  @media (max-width: 480px) {
+    .srv-hero-section { min-height: 340px; }
+    .srv-hero-title { font-size: 28px; }
+    .srv-hero-subtitle { font-size: 15px; }
+    .srv-section-title { font-size: 24px; }
+    
+    .srv-btn { 
+      width: 100%; 
+      max-width: 280px; 
+      padding: 12px 24px; 
+      font-size: 15px; 
+    }
+    
+    .srv-btn-large { 
+      padding: 14px 32px; 
+      font-size: 16px; 
+      max-width: 280px; 
+    }
+    
+    .srv-service-card-new,
+    .srv-expertise-card {
+      border-radius: 10px;
+    }
+    
+    .srv-service-image-wrapper,
+    .srv-expertise-image-wrapper {
+      height: 180px;
+    }
+    
+    .srv-service-icon-badge,
+    .srv-expertise-icon-badge {
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+    }
+    
+    .srv-service-content,
+    .srv-expertise-content {
+      padding: 22px 18px;
+    }
+    
+    .srv-service-title-new,
+    .srv-expertise-title {
+      font-size: 20px;
+    }
+    
+    .srv-service-description-new,
+    .srv-expertise-description {
+      font-size: 14px;
+    }
+    
+    .srv-inquire-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 11px 20px;
+      font-size: 14px;
+    }
+    
+    .srv-trust-card {
+      padding: 25px 20px;
+    }
+    
+    .srv-trust-number {
+      font-size: 36px;
+    }
+    
+    .srv-industry-card,
+    .srv-why-card {
+      padding: 25px 20px;
+    }
+    
+    .srv-industry-icon {
+      font-size: 48px;
+    }
+    
+    .srv-why-icon {
+      font-size: 40px;
+    }
+    
+    .srv-industry-title,
+    .srv-why-title { 
+      font-size: 18px; 
+    }
+    
+    .srv-industry-description,
+    .srv-why-description { 
+      font-size: 14px; 
+    }
+    
+    .srv-cta-icon { font-size: 48px; }
+    .srv-cta-title { font-size: 24px; }
+  }
+  
+  @media (max-width: 360px) {
+    .srv-hero-title { font-size: 24px; }
+    .srv-hero-subtitle { font-size: 14px; }
+    .srv-section-title { font-size: 22px; }
+    
+    .srv-btn { 
+      max-width: 260px; 
+      padding: 11px 20px; 
+      font-size: 14px; 
+    }
+    
+    .srv-btn-large { 
+      max-width: 260px; 
+      padding: 13px 28px; 
+      font-size: 15px; 
+    }
+    
+    .srv-service-image-wrapper,
+    .srv-expertise-image-wrapper {
+      height: 160px;
+    }
+    
+    .srv-cta-title { font-size: 22px; }
+  }
+  
+  /* ============================================
+     ACCESSIBILITY & PRINT STYLES
+     ============================================ */
+  
+  .srv-btn:focus,
+  a:focus {
+    outline: 3px solid #ea580c;
+    outline-offset: 3px;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  
+  @media print {
+    .srv-hero-section,
+    .srv-cta-section {
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+    
+    .srv-hero-overlay {
+      display: none;
+    }
+    
+    .srv-btn {
+      border: 2px solid #000000 !important;
+      color: #000000 !important;
+    }
+    
+    .srv-service-card-new,
+    .srv-expertise-card,
+    .srv-industry-card,
+    .srv-why-card,
+    .srv-trust-card {
+      box-shadow: none !important;
+      border: 1px solid #cccccc !important;
+      page-break-inside: avoid;
+    }
+  }
+  
+  @media (prefers-contrast: high) {
+    .srv-btn-cta-main,
+    .srv-inquire-btn {
+      border-width: 3px;
+    }
+    
+    .srv-service-card-new,
+    .srv-expertise-card,
+    .srv-industry-card,
+    .srv-why-card,
+    .srv-trust-card {
+      border: 2px solid #000000;
+    }
+  }

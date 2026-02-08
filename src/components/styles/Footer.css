@@ -1,0 +1,386 @@
+/* ========================================
+   FOOTER - Main Container
+   ======================================== */
+   .ftr-footer {
+    background: linear-gradient(180deg, #0f172a 0%, #1a365d 100%);
+    color: #ffffff;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Decorative top border */
+  .ftr-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ea580c, #f97316, #ea580c);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  
+  @keyframes shimmer {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* ========================================
+     MAIN FOOTER CONTENT CONTAINER
+     ======================================== */
+  .ftr-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 40px 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 60px;
+  }
+  
+  /* ========================================
+     BRAND SECTION
+     ======================================== */
+  .ftr-brand {
+    max-width: 400px;
+  }
+  
+  .ftr-logo-container {
+    margin-bottom: 16px;
+  }
+  
+  .ftr-logo-image {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1) drop-shadow(0 4px 12px rgba(234, 88, 12, 0.3));
+    transition: all 0.3s ease;
+  }
+  
+  .ftr-logo-image:hover {
+    filter: brightness(0) invert(1) drop-shadow(0 6px 20px rgba(234, 88, 12, 0.5));
+    transform: translateY(-2px);
+  }
+  
+  .ftr-logo-fallback {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ftr-brand-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(135deg, #ffffff 0%, #fed7aa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .ftr-tagline {
+    font-size: 14px;
+    color: #fed7aa;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  
+  .ftr-description {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 24px;
+  }
+  
+  /* ========================================
+     SOCIAL MEDIA ICONS
+     ======================================== */
+  .ftr-social {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .ftr-social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #cbd5e1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ftr-social-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(234, 88, 12, 0.2), rgba(249, 115, 22, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 50%;
+  }
+  
+  .ftr-social-link:hover::before {
+    opacity: 1;
+  }
+  
+  .ftr-social-link:hover {
+    border-color: #ea580c;
+    color: #fed7aa;
+    box-shadow: 0 0 20px rgba(234, 88, 12, 0.4);
+  }
+  
+  .ftr-social-link svg {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* ========================================
+     FOOTER SECTIONS
+     ======================================== */
+  .ftr-section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  .ftr-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #ea580c, #f97316);
+    border-radius: 3px;
+  }
+  
+  /* ========================================
+     NAVIGATION LINKS
+     ======================================== */
+  .ftr-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .ftr-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 6px 0;
+    position: relative;
+  }
+  
+  .ftr-link-icon {
+    font-size: 14px;
+    color: #ea580c;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .ftr-link:hover {
+    color: #fed7aa;
+    padding-left: 8px;
+  }
+  
+  .ftr-link:hover .ftr-link-icon {
+    transform: translateX(4px);
+  }
+  
+  /* ========================================
+     CONTACT INFORMATION
+     ======================================== */
+  .ftr-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .ftr-contact-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  
+  .ftr-contact-icon {
+    width: 24px;
+    height: 24px;
+    color: #ea580c;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  
+  .ftr-contact-label {
+    font-size: 12px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  
+  .ftr-contact-value {
+    font-size: 15px;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+    margin: 0;
+  }
+  
+  a.ftr-contact-value:hover {
+    color: #fed7aa;
+  }
+  
+  /* ========================================
+     BOTTOM SECTION / COPYRIGHT
+     ======================================== */
+  .ftr-bottom {
+    background: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px 0;
+  }
+  
+  .ftr-bottom-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ftr-copyright {
+    font-size: 14px;
+    color: #94a3b8;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* ========================================
+     RESPONSIVE DESIGN
+     ======================================== */
+  
+  /* Tablet - 3 columns */
+  @media (max-width: 1024px) {
+    .ftr-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding: 60px 30px 40px;
+    }
+  
+    .ftr-brand {
+      grid-column: 1 / -1;
+      max-width: 100%;
+    }
+  }
+  
+  /* Mobile - Single column */
+  @media (max-width: 768px) {
+    .ftr-container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 50px 24px 30px;
+    }
+  
+    .ftr-brand {
+      grid-column: 1;
+      text-align: center;
+      max-width: 100%;
+    }
+  
+    .ftr-logo-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .ftr-social {
+      justify-content: center;
+    }
+  
+    .ftr-section-title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .ftr-nav {
+      align-items: center;
+    }
+  
+    .ftr-contact-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .ftr-bottom-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+  
+  /* Small mobile */
+  @media (max-width: 480px) {
+    .ftr-container {
+      padding: 40px 16px 24px;
+      gap: 32px;
+    }
+  
+    .ftr-logo-image {
+      height: 50px;
+    }
+  
+    .ftr-section-title {
+      font-size: 16px;
+    }
+  
+    .ftr-social-link {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .ftr-social-link svg {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .ftr-bottom {
+      padding: 20px 0;
+    }
+  
+    .ftr-copyright {
+      font-size: 13px;
+    }
+  }
+  
+  /* Accessibility - Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .ftr-footer::before,
+    .ftr-social-link,
+    .ftr-link,
+    .ftr-logo-image {
+      animation: none;
+      transition: none;
+    }
+  }

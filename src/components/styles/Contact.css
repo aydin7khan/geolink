@@ -1,0 +1,652 @@
+/* ========================================
+   CONTACT PAGE - PREMIUM PROFESSIONAL REDESIGN
+   Company: Geolink - Surveying & Geospatial Services
+   ======================================== */
+
+/* ========================================
+   COLOR VARIABLES (REFINED BRAND PALETTE)
+   ======================================== */
+   :root {
+    --cnt-navy-blue: #0f2544;
+    --cnt-navy-light: #1a3a5c;
+    --cnt-orange: #f97316;
+    --cnt-orange-dark: #ea580c;
+    --cnt-orange-light: #fb923c;
+    --cnt-background: #f8fafc;
+    --cnt-white: #ffffff;
+    --cnt-text-primary: #0f172a;
+    --cnt-text-secondary: #475569;
+    --cnt-text-muted: #64748b;
+    --cnt-border-light: #e2e8f0;
+    --cnt-border-medium: #cbd5e1;
+    --cnt-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --cnt-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --cnt-shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+    --cnt-shadow-orange: 0 8px 24px rgba(249, 115, 22, 0.25);
+  }
+  
+  /* ========================================
+     PAGE CONTAINER
+     ======================================== */
+  .cnt-page {
+    min-height: 100vh;
+    background-color: var(--cnt-background);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  /* ========================================
+     HERO / HEADER SECTION - PREMIUM GRADIENT
+     ======================================== */
+  .cnt-hero {
+    background: linear-gradient(135deg, #0a1628 0%, #0f2544 50%, #1a3a5c 100%);
+    color: var(--cnt-white);
+    padding: 100px 24px 120px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cnt-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(249, 115, 22, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(249, 115, 22, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  
+  .cnt-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.03)"/></svg>');
+    opacity: 0.4;
+  }
+  
+  .cnt-hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--cnt-orange), transparent);
+  }
+  
+  .cnt-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cnt-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    letter-spacing: 0.3px;
+  }
+  
+  .cnt-hero h1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .cnt-hero p {
+    font-size: 19px;
+    opacity: 0.92;
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #cbd5e1;
+  }
+  
+  /* ========================================
+     CONTAINER
+     ======================================== */
+  .cnt-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  /* ========================================
+     QUICK INFO CARDS - TOP SECTION
+     ======================================== */
+  .cnt-quick-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin: -60px auto 80px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .cnt-quick-card {
+    background: var(--cnt-white);
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: var(--cnt-shadow-lg);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--cnt-border-light);
+  }
+  
+  .cnt-quick-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cnt-quick-icon {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    background: linear-gradient(135deg, var(--cnt-orange) 0%, var(--cnt-orange-light) 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cnt-white);
+    box-shadow: var(--cnt-shadow-orange);
+  }
+  
+  .cnt-quick-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--cnt-text-primary);
+    letter-spacing: -0.3px;
+  }
+  
+  .cnt-quick-content p {
+    font-size: 15px;
+    color: var(--cnt-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .cnt-quick-content a {
+    color: var(--cnt-text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    display: block;
+    margin-top: 2px;
+  }
+  
+  .cnt-quick-content a:hover {
+    color: var(--cnt-orange);
+  }
+  
+  /* ========================================
+     MAIN GRID LAYOUT
+     ======================================== */
+  .cnt-main-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  
+  /* ========================================
+     SECTION HEADERS
+     ======================================== */
+  .cnt-section-header {
+    margin-bottom: 32px;
+  }
+  
+  .cnt-section-header h2 {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--cnt-text-primary);
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+  }
+  
+  .cnt-section-header p {
+    font-size: 17px;
+    color: var(--cnt-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* ========================================
+     CONTACT FORM - PREMIUM DESIGN
+     ======================================== */
+  .cnt-form {
+    background: var(--cnt-white);
+    padding: 48px;
+    border-radius: 20px;
+    box-shadow: var(--cnt-shadow-md);
+    border: 1px solid var(--cnt-border-light);
+  }
+  
+  .cnt-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .cnt-form-group {
+    margin-bottom: 24px;
+  }
+  
+  .cnt-form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--cnt-text-primary);
+    letter-spacing: 0.2px;
+  }
+  
+  .cnt-form-group input,
+  .cnt-form-group select,
+  .cnt-form-group textarea {
+    width: 100%;
+    padding: 15px 18px;
+    font-size: 15px;
+    border: 2px solid var(--cnt-border-light);
+    border-radius: 12px;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    background-color: var(--cnt-white);
+    color: var(--cnt-text-primary);
+    font-weight: 400;
+  }
+  
+  .cnt-form-group input:focus,
+  .cnt-form-group select:focus,
+  .cnt-form-group textarea:focus {
+    outline: none;
+    border-color: var(--cnt-orange);
+    box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.08);
+  }
+  
+  .cnt-form-group input::placeholder,
+  .cnt-form-group textarea::placeholder {
+    color: var(--cnt-text-muted);
+  }
+  
+  .cnt-form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+    line-height: 1.6;
+  }
+  
+  .cnt-form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 45px;
+  }
+  
+  /* ========================================
+     SUBMIT BUTTON - PREMIUM STYLE
+     ======================================== */
+  .cnt-submit-btn {
+    width: 100%;
+    padding: 18px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cnt-white);
+    background: linear-gradient(135deg, var(--cnt-orange-dark) 0%, var(--cnt-orange) 100%);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+    box-shadow: var(--cnt-shadow-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 0.3px;
+  }
+  
+  .cnt-submit-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, var(--cnt-orange) 0%, var(--cnt-orange-light) 100%);
+    box-shadow: 0 12px 32px rgba(249, 115, 22, 0.35);
+    transform: translateY(-2px);
+  }
+  
+  .cnt-submit-btn:active:not(:disabled) {
+    transform: translateY(0);
+  }
+  
+  .cnt-submit-btn svg {
+    transition: transform 0.3s ease;
+  }
+  
+  .cnt-submit-btn:hover:not(:disabled) svg {
+    transform: translateX(4px);
+  }
+  
+  /* Loading State */
+  .cnt-btn-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .cnt-spinner {
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    border-top-color: var(--cnt-white);
+    border-radius: 50%;
+    animation: cnt-spin 0.7s linear infinite;
+  }
+  
+  @keyframes cnt-spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Disabled State */
+  .cnt-submit-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+  
+  .cnt-form-group input:disabled,
+  .cnt-form-group select:disabled,
+  .cnt-form-group textarea:disabled {
+    background-color: #f8fafc;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  /* ========================================
+     SUCCESS/ERROR MESSAGES
+     ======================================== */
+  .cnt-message {
+    margin-top: 24px;
+    padding: 18px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: 1.5;
+  }
+  
+  .cnt-message svg {
+    min-width: 20px;
+  }
+  
+  .cnt-message-success {
+    background-color: #ecfdf5;
+    color: #047857;
+    border: 2px solid #86efac;
+  }
+  
+  .cnt-message-error {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border: 2px solid #fca5a5;
+  }
+  
+  /* ========================================
+     SIDEBAR (MAP & INFO)
+     ======================================== */
+  .cnt-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  /* MAP CONTAINER */
+  .cnt-map-container {
+    background: var(--cnt-white);
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: var(--cnt-shadow-md);
+    border: 1px solid var(--cnt-border-light);
+  }
+  
+  .cnt-map-container h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--cnt-text-primary);
+    letter-spacing: -0.4px;
+  }
+  
+  .cnt-map-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* BUSINESS HOURS CARD */
+  .cnt-hours-card {
+    background: var(--cnt-white);
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: var(--cnt-shadow-md);
+    border: 1px solid var(--cnt-border-light);
+  }
+  
+  .cnt-hours-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--cnt-text-primary);
+    letter-spacing: -0.4px;
+  }
+  
+  .cnt-hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .cnt-hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--cnt-border-light);
+  }
+  
+  .cnt-hours-row:last-child {
+    border-bottom: none;
+  }
+  
+  .cnt-day {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cnt-text-primary);
+  }
+  
+  .cnt-time {
+    font-size: 15px;
+    color: var(--cnt-text-secondary);
+    font-weight: 500;
+  }
+  
+  .cnt-hours-closed .cnt-time {
+    color: #dc2626;
+    font-weight: 600;
+  }
+  
+  /* WEBSITE CARD */
+  .cnt-website-card {
+    background: linear-gradient(135deg, var(--cnt-navy-blue) 0%, var(--cnt-navy-light) 100%);
+    padding: 28px 32px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: var(--cnt-shadow-lg);
+    color: var(--cnt-white);
+  }
+  
+  .cnt-website-card svg {
+    min-width: 24px;
+    opacity: 0.9;
+  }
+  
+  .cnt-website-card p {
+    font-size: 14px;
+    margin: 0 0 6px 0;
+    opacity: 0.85;
+    font-weight: 500;
+  }
+  
+  .cnt-website-card a {
+    font-size: 17px;
+    color: var(--cnt-white);
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease;
+    display: inline-block;
+    letter-spacing: 0.2px;
+  }
+  
+  .cnt-website-card a:hover {
+    border-bottom-color: var(--cnt-orange);
+    color: var(--cnt-orange-light);
+  }
+  
+  /* ========================================
+     RESPONSIVE DESIGN
+     ======================================== */
+  
+  /* Tablet View */
+  @media (max-width: 1024px) {
+    .cnt-main-grid {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+  
+    .cnt-hero h1 {
+      font-size: 46px;
+    }
+  
+    .cnt-section-header h2 {
+      font-size: 34px;
+    }
+  }
+  
+  /* Small Tablet */
+  @media (max-width: 768px) {
+    .cnt-quick-info {
+      grid-template-columns: 1fr;
+      margin: -40px auto 60px;
+      gap: 20px;
+    }
+  
+    .cnt-form {
+      padding: 32px 24px;
+    }
+  
+    .cnt-form-row {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  
+    .cnt-hero {
+      padding: 80px 20px 100px;
+    }
+  
+    .cnt-hero h1 {
+      font-size: 38px;
+    }
+  
+    .cnt-hero p {
+      font-size: 17px;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 640px) {
+    .cnt-hero {
+      padding: 60px 16px 80px;
+    }
+  
+    .cnt-hero h1 {
+      font-size: 32px;
+    }
+  
+    .cnt-hero p {
+      font-size: 16px;
+    }
+  
+    .cnt-container {
+      padding: 0 16px;
+    }
+  
+    .cnt-quick-info {
+      margin: -30px auto 48px;
+    }
+  
+    .cnt-quick-card {
+      padding: 24px;
+    }
+  
+    .cnt-quick-icon {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+    }
+  
+    .cnt-section-header h2 {
+      font-size: 28px;
+    }
+  
+    .cnt-section-header p {
+      font-size: 16px;
+    }
+  
+    .cnt-form {
+      padding: 28px 20px;
+    }
+  
+    .cnt-map-container,
+    .cnt-hours-card {
+      padding: 24px 20px;
+    }
+  
+    .cnt-website-card {
+      padding: 24px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .cnt-main-grid {
+      gap: 32px;
+      margin-bottom: 60px;
+    }
+  }

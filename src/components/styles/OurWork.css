@@ -1,0 +1,1191 @@
+/* ============================================
+   GEOLINK SURVEY - OUR WORK PAGE STYLES
+   THEME: Navy Blue (#1a365d, #0f172a) + Orange (#ea580c, #f97316)
+   Matching Home page design system exactly
+   ============================================ */
+
+   .wrk-page {
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .wrk-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .wrk-section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+  
+  .wrk-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background: linear-gradient(90deg, #ea580c, #f97316);
+    border-radius: 5px;
+  }
+  
+  /* ============================================
+     HERO SECTION
+     ============================================ */
+  .wrk-hero-section {
+    position: relative;
+    color: #ffffff;
+    padding: 120px 20px 100px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wrk-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .wrk-hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .wrk-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.88) 0%, rgba(15, 23, 42, 0.92) 100%);
+    z-index: 1;
+  }
+  
+  .wrk-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .wrk-hero-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .wrk-hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    opacity: 0.95;
+    color: #fed7aa;
+  }
+  
+  .wrk-hero-description {
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ============================================
+     WORK OVERVIEW SECTION
+     ============================================ */
+  .wrk-overview-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .wrk-overview-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .wrk-overview-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .wrk-overview-text strong {
+    color: #1a365d;
+    font-weight: 600;
+  }
+  
+  /* ============================================
+     HIGHLIGHTS SECTION
+     ============================================ */
+  .wrk-highlights-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .wrk-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .wrk-highlight-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border-top: 4px solid #ea580c;
+  }
+  
+  .wrk-highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.15);
+  }
+  
+  .wrk-highlight-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ea580c;
+    margin-bottom: 15px;
+    line-height: 1;
+  }
+  
+  .wrk-highlight-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 8px;
+  }
+  
+  .wrk-highlight-description {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+  }
+  
+  /* ============================================
+     PROJECT SECTIONS
+     ============================================ */
+  .wrk-projects-section {
+    padding: 80px 20px;
+  }
+  
+  .wrk-section-government {
+    background-color: #ffffff;
+  }
+  
+  .wrk-section-infrastructure {
+    background-color: #f8f9fb;
+  }
+  
+  .wrk-section-defence {
+    background-color: #ffffff;
+  }
+  
+  .wrk-section-energy {
+    background-color: #f8f9fb;
+  }
+  
+  .wrk-section-mining {
+    background-color: #ffffff;
+  }
+  
+  .wrk-section-specialized {
+    background-color: #f8f9fb;
+  }
+  
+  /* ============================================
+     PROJECT BLOCK STYLES
+     ============================================ */
+  .wrk-project-block {
+    margin-bottom: 70px;
+  }
+  
+  .wrk-project-block:last-child {
+    margin-bottom: 0;
+  }
+  
+  .wrk-project-header {
+    margin-bottom: 35px;
+  }
+  
+  .wrk-project-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #fff7ed;
+    color: #ea580c;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #fed7aa;
+  }
+  
+  .wrk-project-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+  
+  .wrk-project-description {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.7;
+    max-width: 900px;
+  }
+  
+  /* ============================================
+     PROJECT GRIDS
+     ============================================ */
+  .wrk-project-grid {
+    display: grid;
+    gap: 25px;
+    margin-top: 30px;
+  }
+  
+  .wrk-grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .wrk-grid-3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .wrk-grid-4col {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* ============================================
+     PROJECT ITEMS
+     ============================================ */
+  .wrk-project-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .wrk-project-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(234, 88, 12, 0.12);
+    border-color: #ea580c;
+  }
+  
+  .wrk-project-image-wrapper {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wrk-item-large .wrk-project-image-wrapper {
+    height: 280px;
+  }
+  
+  .wrk-project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .wrk-project-item:hover .wrk-project-image {
+    transform: scale(1.05);
+  }
+  
+  .wrk-project-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(26, 54, 93, 0.3) 0%, rgba(15, 23, 42, 0.7) 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .wrk-project-item:hover .wrk-project-image-overlay {
+    background: linear-gradient(to bottom, rgba(26, 54, 93, 0.5) 0%, rgba(15, 23, 42, 0.85) 100%);
+  }
+  
+  .wrk-project-area-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ea580c;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .wrk-project-info {
+    padding: 25px 20px;
+  }
+  
+  .wrk-project-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 8px;
+  }
+  
+  .wrk-project-info p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  /* ============================================
+     FEATURED PROJECT LAYOUT
+     ============================================ */
+  .wrk-project-featured {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    margin-top: 30px;
+  }
+  
+  .wrk-project-featured:hover {
+    box-shadow: 0 12px 28px rgba(234, 88, 12, 0.12);
+    border-color: #ea580c;
+  }
+  
+  .wrk-featured-image-wrapper {
+    flex: 0 0 50%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wrk-featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .wrk-project-featured:hover .wrk-featured-image {
+    transform: scale(1.05);
+  }
+  
+  .wrk-featured-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(26, 54, 93, 0.3) 0%, rgba(15, 23, 42, 0.6) 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .wrk-project-featured:hover .wrk-featured-overlay {
+    background: linear-gradient(to bottom, rgba(26, 54, 93, 0.5) 0%, rgba(15, 23, 42, 0.8) 100%);
+  }
+  
+  .wrk-featured-badge {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+    color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(234, 88, 12, 0.3);
+    z-index: 1;
+  }
+  
+  .wrk-badge-inline {
+    top: 30px;
+    right: 30px;
+    bottom: auto;
+  }
+  
+  .wrk-badge-number {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  
+  .wrk-badge-text {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.95;
+  }
+  
+  .wrk-featured-info {
+    flex: 1;
+    padding: 30px 40px 30px 0;
+  }
+  
+  .wrk-featured-info h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 15px;
+  }
+  
+  .wrk-featured-info p {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.7;
+  }
+  
+  /* ============================================
+     PROJECT TAGS
+     ============================================ */
+  .wrk-project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+  }
+  
+  .wrk-tag {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #f8f9fb;
+    border: 2px solid #fed7aa;
+    color: #1a365d;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrk-tag:hover {
+    background-color: #ea580c;
+    border-color: #ea580c;
+    color: #ffffff;
+  }
+  
+  .wrk-project-additional-info {
+    margin-top: 25px;
+    padding: 20px 25px;
+    background-color: #f8f9fb;
+    border-left: 4px solid #ea580c;
+    border-radius: 4px;
+  }
+  
+  .wrk-project-additional-info p {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.7;
+    margin: 0;
+  }
+  
+  .wrk-project-additional-info strong {
+    color: #1a365d;
+  }
+  
+  /* ============================================
+     METHODOLOGY SECTION
+     ============================================ */
+  .wrk-methodology-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .wrk-methodology-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+  }
+  
+  .wrk-methodology-intro p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+  }
+  
+  .wrk-methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .wrk-methodology-card {
+    background-color: #f8f9fb;
+    padding: 35px 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+  
+  .wrk-methodology-card:hover {
+    border-color: #ea580c;
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.12);
+    transform: translateY(-5px);
+  }
+  
+  .wrk-methodology-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .wrk-methodology-icon-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .wrk-methodology-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 15px;
+  }
+  
+  .wrk-methodology-card p {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .wrk-methodology-card strong {
+    color: #1a365d;
+  }
+  
+  .wrk-methodology-specs {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .wrk-methodology-specs span {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #ffffff;
+    border: 1px solid #fed7aa;
+    color: #ea580c;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+  
+  .wrk-compliance-info {
+    margin-top: 50px;
+    padding: 30px 40px;
+    background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%);
+    border-radius: 8px;
+    border-left: 5px solid #ea580c;
+  }
+  
+  .wrk-compliance-info h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 15px;
+  }
+  
+  .wrk-compliance-info p {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.8;
+    margin: 0;
+  }
+  
+  /* ============================================
+     GALLERY SECTION
+     ============================================ */
+  .wrk-gallery-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .wrk-gallery-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+  }
+  
+  .wrk-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .wrk-gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .wrk-gallery-large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .wrk-gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(234, 88, 12, 0.15);
+  }
+  
+  .wrk-gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .wrk-gallery-item:hover .wrk-gallery-image {
+    transform: scale(1.1);
+  }
+  
+  .wrk-gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, transparent 100%);
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .wrk-gallery-item:hover .wrk-gallery-overlay {
+    transform: translateY(0);
+  }
+  
+  .wrk-gallery-label {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* ============================================
+     CALL TO ACTION SECTION
+     ============================================ */
+  .wrk-cta-section {
+    background: linear-gradient(135deg, #1a365d 0%, #0f172a 100%);
+    padding: 90px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wrk-cta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .wrk-cta-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 30% 50%, rgba(234, 88, 12, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(249, 115, 22, 0.15) 0%, transparent 50%);
+    animation: wrkPatternFloat 10s ease-in-out infinite alternate;
+  }
+  
+  @keyframes wrkPatternFloat {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(20px, 20px) scale(1.05); }
+  }
+  
+  .wrk-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .wrk-cta-icon {
+    font-size: 72px;
+    margin-bottom: 20px;
+    animation: wrkIconBounce 2s ease-in-out infinite;
+  }
+  
+  @keyframes wrkIconBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .wrk-cta-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  
+  .wrk-cta-text {
+    font-size: 18px;
+    color: #fed7aa;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  
+  .wrk-cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .wrk-cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .wrk-cta-feature-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ea580c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  /* ============================================
+     BUTTON STYLES
+     ============================================ */
+  .wrk-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .wrk-btn-large {
+    padding: 16px 40px;
+    font-size: 18px;
+  }
+  
+  .wrk-btn-cta-main {
+    background-color: #ea580c;
+    color: #ffffff;
+    border-color: #ea580c;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .wrk-btn-arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .wrk-btn-cta-main:hover .wrk-btn-arrow {
+    transform: translateX(5px);
+  }
+  
+  .wrk-btn-cta-main:hover {
+    background-color: #c2410c;
+    border-color: #c2410c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(234, 88, 12, 0.3);
+  }
+  
+  .wrk-cta-subtext {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fed7aa;
+    font-style: italic;
+  }
+  
+  /* ============================================
+     RESPONSIVE DESIGN
+     ============================================ */
+  
+  @media (max-width: 992px) {
+    .wrk-hero-title {
+      font-size: 42px;
+    }
+  
+    .wrk-hero-subtitle {
+      font-size: 18px;
+    }
+  
+    .wrk-hero-description {
+      font-size: 16px;
+    }
+  
+    .wrk-section-title {
+      font-size: 32px;
+    }
+  
+    .wrk-cta-title {
+      font-size: 36px;
+    }
+  
+    .wrk-cta-icon {
+      font-size: 60px;
+    }
+  
+    .wrk-grid-4col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .wrk-gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .wrk-gallery-large {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wrk-hero-section {
+      padding: 80px 20px 80px;
+      min-height: 500px;
+    }
+  
+    .wrk-hero-title {
+      font-size: 34px;
+    }
+  
+    .wrk-hero-subtitle {
+      font-size: 16px;
+    }
+  
+    .wrk-hero-description {
+      font-size: 15px;
+    }
+  
+    .wrk-section-title {
+      font-size: 28px;
+      margin-bottom: 40px;
+      padding-bottom: 15px;
+    }
+  
+    .wrk-overview-section,
+    .wrk-highlights-section,
+    .wrk-projects-section,
+    .wrk-methodology-section,
+    .wrk-gallery-section {
+      padding: 60px 20px;
+    }
+  
+    .wrk-highlights-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .wrk-grid-2col,
+    .wrk-grid-3col,
+    .wrk-grid-4col {
+      grid-template-columns: 1fr;
+    }
+  
+    .wrk-project-featured {
+      flex-direction: column;
+    }
+  
+    .wrk-featured-image-wrapper {
+      flex: 0 0 auto;
+      width: 100%;
+      height: 300px;
+    }
+  
+    .wrk-featured-info {
+      padding: 30px 20px;
+    }
+  
+    .wrk-featured-badge {
+      bottom: 20px;
+      right: 20px;
+      padding: 15px 25px;
+    }
+  
+    .wrk-badge-number {
+      font-size: 32px;
+    }
+  
+    .wrk-methodology-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .wrk-compliance-info {
+      padding: 25px 20px;
+    }
+  
+    .wrk-gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .wrk-gallery-large {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+  
+    .wrk-cta-section {
+      padding: 70px 20px;
+    }
+  
+    .wrk-cta-icon {
+      font-size: 56px;
+    }
+  
+    .wrk-cta-title {
+      font-size: 28px;
+    }
+  
+    .wrk-cta-text {
+      font-size: 16px;
+    }
+  
+    .wrk-cta-features {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wrk-hero-section {
+      min-height: 450px;
+    }
+  
+    .wrk-hero-title {
+      font-size: 28px;
+    }
+  
+    .wrk-hero-subtitle {
+      font-size: 15px;
+    }
+  
+    .wrk-hero-description {
+      font-size: 15px;
+    }
+  
+    .wrk-btn {
+      width: 100%;
+      max-width: 280px;
+      padding: 12px 24px;
+      font-size: 15px;
+    }
+  
+    .wrk-btn-large {
+      padding: 14px 32px;
+      font-size: 16px;
+      max-width: 280px;
+    }
+  
+    .wrk-section-title {
+      font-size: 24px;
+    }
+  
+    .wrk-project-title {
+      font-size: 24px;
+    }
+  
+    .wrk-project-image-wrapper,
+    .wrk-item-large .wrk-project-image-wrapper {
+      height: 200px;
+    }
+  
+    .wrk-featured-image-wrapper {
+      height: 250px;
+    }
+  
+    .wrk-highlight-number {
+      font-size: 40px;
+    }
+  
+    .wrk-cta-icon {
+      font-size: 48px;
+    }
+  
+    .wrk-gallery-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .wrk-gallery-large {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .wrk-hero-section {
+      min-height: 420px;
+    }
+  
+    .wrk-hero-title {
+      font-size: 24px;
+    }
+  
+    .wrk-hero-subtitle {
+      font-size: 14px;
+    }
+  
+    .wrk-hero-description {
+      font-size: 14px;
+    }
+  
+    .wrk-btn {
+      max-width: 260px;
+      padding: 11px 20px;
+      font-size: 14px;
+    }
+  
+    .wrk-btn-large {
+      max-width: 260px;
+      padding: 13px 28px;
+      font-size: 15px;
+    }
+  
+    .wrk-section-title {
+      font-size: 22px;
+    }
+  
+    .wrk-project-image-wrapper,
+    .wrk-item-large .wrk-project-image-wrapper {
+      height: 180px;
+    }
+  
+    .wrk-featured-image-wrapper {
+      height: 220px;
+    }
+  }
+  
+  /* ============================================
+     ACCESSIBILITY & PRINT STYLES
+     ============================================ */
+  
+  .wrk-btn:focus,
+  a:focus {
+    outline: 3px solid #ea580c;
+    outline-offset: 3px;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  
+  @media print {
+    .wrk-hero-section,
+    .wrk-cta-section {
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+  
+    .wrk-btn {
+      border: 2px solid #000000 !important;
+      color: #000000 !important;
+    }
+  
+    .wrk-project-item,
+    .wrk-highlight-card,
+    .wrk-methodology-card {
+      box-shadow: none !important;
+      border: 1px solid #cccccc !important;
+    }
+  
+    .wrk-project-image,
+    .wrk-featured-image,
+    .wrk-gallery-image {
+      page-break-inside: avoid;
+    }
+  }
+  
+  @media (prefers-contrast: high) {
+    .wrk-btn {
+      border-width: 3px;
+    }
+  
+    .wrk-project-item,
+    .wrk-highlight-card,
+    .wrk-methodology-card {
+      border: 2px solid #000000;
+    }
+  }

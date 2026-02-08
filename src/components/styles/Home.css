@@ -1,0 +1,1106 @@
+/* ============================================
+   GEOLINK SURVEY - HOME PAGE STYLES (ENHANCED WITH IMAGES)
+   THEME: Navy Blue (#1a365d, #0f172a) + Orange (#ea580c, #f97316)
+   ============================================ */
+
+   .hmp-page {
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .hmp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .hmp-section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .hmp-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background: linear-gradient(90deg, #ea580c, #f97316);
+    border-radius: 5px;
+  }
+  
+  /* ============================================
+     HERO SECTION WITH BACKGROUND IMAGES
+     ============================================ */
+  .hmp-hero-section {
+    position: relative;
+    color: #ffffff;
+    padding: 120px 20px 100px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hmp-hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .hmp-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .hmp-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.85) 0%, rgba(15, 23, 42, 0.9) 100%);
+    z-index: 1;
+  }
+  
+  .hmp-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+  }
+  
+  .hmp-hero-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    min-height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hmp-hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    opacity: 0.95;
+    color: #fed7aa;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hmp-hero-description {
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hmp-hero-cta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .hmp-hero-navigation {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+  
+  .hmp-hero-dots {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .hmp-dot {
+    width: 40px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hmp-dot:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .hmp-dot.active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .hmp-dot-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #ea580c, #f97316);
+    border-radius: 3px;
+    transition: width 0.05s linear;
+  }
+  
+  /* BUTTON STYLES */
+  .hmp-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .hmp-btn-primary {
+    background-color: #ea580c;
+    color: #ffffff;
+    border-color: #ea580c;
+  }
+  
+  .hmp-btn-primary:hover {
+    background-color: #c2410c;
+    border-color: #c2410c;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(234, 88, 12, 0.3);
+  }
+  
+  .hmp-btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  .hmp-btn-secondary:hover {
+    background-color: #ffffff;
+    color: #1a365d;
+    transform: translateY(-2px);
+  }
+  
+  .hmp-btn-outline {
+    background-color: transparent;
+    color: #ea580c;
+    border-color: #ea580c;
+  }
+  
+  .hmp-btn-outline:hover {
+    background-color: #ea580c;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  .hmp-btn-large {
+    padding: 16px 40px;
+    font-size: 18px;
+  }
+  
+  /* ============================================
+     TRUST INDICATORS SECTION
+     ============================================ */
+  .hmp-trust-section {
+    padding: 70px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .hmp-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .hmp-trust-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #ea580c;
+  }
+  
+  .hmp-trust-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.15);
+  }
+  
+  .hmp-trust-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ea580c;
+    margin-bottom: 10px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hmp-trust-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 8px;
+  }
+  
+  .hmp-trust-desc {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* ============================================
+     ABOUT SNAPSHOT SECTION
+     ============================================ */
+  .hmp-about-snapshot {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .hmp-about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .hmp-about-text {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  .hmp-about-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .hmp-about-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .hmp-highlight-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a365d;
+    padding: 10px 20px;
+    background-color: #fff7ed;
+    border-radius: 6px;
+    border: 2px solid #fed7aa;
+  }
+  
+  /* ============================================
+     SERVICES WITH REAL IMAGES
+     ============================================ */
+  .hmp-services-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .hmp-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .hmp-service-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+  }
+  
+  .hmp-service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(234, 88, 12, 0.12);
+    border-color: #ea580c;
+  }
+  
+  .hmp-service-image-wrapper {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hmp-service-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .hmp-service-card:hover .hmp-service-bg-image {
+    transform: scale(1.05);
+  }
+  
+  .hmp-service-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(26, 54, 93, 0.3) 0%, rgba(15, 23, 42, 0.7) 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .hmp-service-card:hover .hmp-service-image-overlay {
+    background: linear-gradient(to bottom, rgba(26, 54, 93, 0.5) 0%, rgba(15, 23, 42, 0.85) 100%);
+  }
+  
+  .hmp-service-content {
+    padding: 25px 20px;
+  }
+  
+  .hmp-service-title-with-icon {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a2332;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hmp-service-icon-inline {
+    font-size: 28px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+  
+  .hmp-service-content p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  .hmp-services-cta {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* ============================================
+     WHY CHOOSE GEOLINK SECTION
+     ============================================ */
+  .hmp-why-choose-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .hmp-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+  }
+  
+  .hmp-why-card {
+    background-color: #f8f9fb;
+    padding: 35px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .hmp-why-card:hover {
+    background-color: #ffffff;
+    border-color: #ea580c;
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.08);
+  }
+  
+  .hmp-why-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hmp-why-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 12px;
+  }
+  
+  .hmp-why-card p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+  }
+  
+  /* ============================================
+     TRUSTED PARTNERS WITH LOGOS
+     ============================================ */
+  .hmp-partners-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+    overflow: hidden;
+  }
+  
+  .hmp-partners-slider {
+    overflow: hidden;
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  .hmp-partners-track {
+    display: flex;
+    animation: partnerScroll 30s linear infinite;
+    width: fit-content;
+  }
+  
+  @keyframes partnerScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  .hmp-partner-item {
+    flex: 0 0 auto;
+    width: 200px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .hmp-partner-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.12);
+    border-color: #fed7aa;
+  }
+  
+  .hmp-partner-logo-container {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .hmp-partner-logo-img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .hmp-partner-item:hover .hmp-partner-logo-img {
+    filter: grayscale(0%);
+  }
+  
+  .hmp-partner-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a2332;
+    line-height: 1.4;
+  }
+  
+  .hmp-partners-slider:hover .hmp-partners-track {
+    animation-play-state: paused;
+  }
+  
+  /* ============================================
+     FEATURED PROJECTS WITH IMAGES
+     ============================================ */
+  .hmp-work-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .hmp-work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .hmp-work-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+  }
+  
+  .hmp-work-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(234, 88, 12, 0.12);
+    border-color: #ea580c;
+  }
+  
+  .hmp-work-image-wrapper {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hmp-work-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .hmp-work-card:hover .hmp-work-bg-image {
+    transform: scale(1.1);
+  }
+  
+  .hmp-work-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .hmp-work-card:hover .hmp-work-image-overlay {
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+  }
+  
+  .hmp-work-info {
+    padding: 25px;
+  }
+  
+  .hmp-work-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  
+  .hmp-work-info p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  
+  .hmp-work-cta {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* ============================================
+     GOOGLE REVIEWS TESTIMONIALS
+     ============================================ */
+  .hmp-testimonials-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .hmp-testimonials-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 40px;
+    margin-top: 15px;
+  }
+  
+  .hmp-google-link {
+    color: #ea580c;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .hmp-google-link:hover {
+    border-bottom-color: #ea580c;
+  }
+  
+  .hmp-testimonials-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .hmp-testimonials-content {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .hmp-slider-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #ea580c;
+    color: #ea580c;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hmp-slider-button:hover {
+    background-color: #ea580c;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.2);
+  }
+  
+  .hmp-slider-button:active {
+    transform: scale(0.95);
+  }
+  
+  .hmp-google-review-card {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border: 2px solid #fed7aa;
+  }
+  
+  .hmp-review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 12px;
+  }
+  
+  .hmp-reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1a365d 0%, #0f172a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+  }
+  
+  .hmp-reviewer-info {
+    flex: 1;
+  }
+  
+  .hmp-reviewer-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 4px;
+  }
+  
+  .hmp-reviewer-role {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .hmp-google-logo {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #4285f4 0%, #34a853 50%, #fbbc05 75%, #ea4335 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  
+  .hmp-review-stars {
+    margin-bottom: 20px;
+  }
+  
+  .hmp-star {
+    color: #fbbc05;
+    font-size: 24px;
+    margin-right: 4px;
+  }
+  
+  .hmp-review-text {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .hmp-review-footer {
+    font-size: 13px;
+    color: #9ca3af;
+    font-style: italic;
+  }
+  
+  .hmp-testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .hmp-testimonials-cta {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* ============================================
+     ENHANCED CALL TO ACTION SECTION
+     ============================================ */
+  .hmp-cta-section {
+    background: linear-gradient(135deg, #1a365d 0%, #0f172a 100%);
+    padding: 90px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hmp-cta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .hmp-cta-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 30% 50%, rgba(234, 88, 12, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(249, 115, 22, 0.15) 0%, transparent 50%);
+    animation: patternFloat 10s ease-in-out infinite alternate;
+  }
+  
+  @keyframes patternFloat {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(20px, 20px) scale(1.05); }
+  }
+  
+  .hmp-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hmp-cta-icon {
+    font-size: 72px;
+    margin-bottom: 20px;
+    animation: iconBounce 2s ease-in-out infinite;
+  }
+  
+  @keyframes iconBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .hmp-cta-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  
+  .hmp-cta-text {
+    font-size: 18px;
+    color: #fed7aa;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  
+  .hmp-cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .hmp-cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .hmp-cta-feature-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ea580c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .hmp-btn-cta-main {
+    background-color: #ea580c;
+    color: #ffffff;
+    border-color: #ea580c;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hmp-btn-arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .hmp-btn-cta-main:hover .hmp-btn-arrow {
+    transform: translateX(5px);
+  }
+  
+  .hmp-btn-cta-main:hover {
+    background-color: #c2410c;
+    border-color: #c2410c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(234, 88, 12, 0.3);
+  }
+  
+  .hmp-cta-subtext {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fed7aa;
+    font-style: italic;
+  }
+  
+  /* ============================================
+     RESPONSIVE DESIGN
+     ============================================ */
+  
+  @media (max-width: 992px) {
+    .hmp-hero-title { font-size: 42px; }
+    .hmp-hero-subtitle { font-size: 18px; }
+    .hmp-hero-description { font-size: 16px; }
+    .hmp-section-title { font-size: 32px; }
+    .hmp-cta-title { font-size: 36px; }
+    .hmp-trust-number { font-size: 40px; }
+    .hmp-cta-icon { font-size: 60px; }
+    .hmp-partners-track { animation-duration: 20s; }
+    .hmp-partner-item { width: 180px; }
+    .hmp-slider-button { width: 45px; height: 45px; font-size: 28px; }
+  }
+  
+  @media (max-width: 768px) {
+    .hmp-hero-section { padding: 80px 20px 80px; min-height: 550px; }
+    .hmp-hero-content { min-height: 380px; }
+    .hmp-hero-title { font-size: 34px; min-height: 85px; }
+    .hmp-hero-subtitle { font-size: 16px; min-height: 45px; }
+    .hmp-hero-description { font-size: 15px; min-height: 90px; }
+    .hmp-hero-cta { flex-direction: column; gap: 15px; }
+    .hmp-hero-navigation { bottom: 20px; }
+    .hmp-btn { width: 100%; max-width: 300px; }
+    .hmp-section-title { font-size: 28px; margin-bottom: 15px; }
+    .hmp-trust-section, .hmp-about-snapshot, .hmp-services-section, .hmp-why-choose-section, .hmp-partners-section, .hmp-work-section, .hmp-testimonials-section { padding: 60px 20px; }
+    .hmp-trust-grid, .hmp-services-grid, .hmp-why-grid, .hmp-work-grid { grid-template-columns: 1fr; gap: 25px; }
+    .hmp-trust-card { padding: 30px 25px; }
+    .hmp-trust-number { font-size: 36px; }
+    .hmp-about-text p { font-size: 16px; text-align: center; }
+    .hmp-about-highlights { flex-direction: column; gap: 15px; align-items: center; }
+    .hmp-highlight-item { width: 100%; max-width: 280px; text-align: center; }
+    .hmp-service-card, .hmp-why-card { padding: 20px; }
+    .hmp-service-image-wrapper { height: 160px; }
+    .hmp-partner-item { width: 160px; padding: 20px; }
+    .hmp-partner-logo-container { height: 70px; }
+    .hmp-partner-logo-img { max-height: 70px; }
+    .hmp-partners-track { animation-duration: 15s; }
+    .hmp-cta-section { padding: 70px 20px; }
+    .hmp-cta-icon { font-size: 56px; }
+    .hmp-cta-title { font-size: 28px; }
+    .hmp-cta-text { font-size: 16px; }
+    .hmp-cta-features { flex-direction: column; gap: 15px; }
+    .hmp-work-info { padding: 20px; }
+    .hmp-work-info h4 { font-size: 17px; }
+    .hmp-work-info p { font-size: 13px; }
+    .hmp-testimonials-slider { flex-direction: column; gap: 20px; padding: 0 10px; }
+    .hmp-slider-button { width: 45px; height: 45px; font-size: 28px; position: relative; align-self: center; }
+    .hmp-slider-prev { order: 1; }
+    .hmp-testimonials-content { order: 2; width: 100%; }
+    .hmp-slider-next { order: 3; }
+    .hmp-google-review-card { padding: 25px 20px; }
+    .hmp-review-header { flex-wrap: wrap; gap: 10px; }
+    .hmp-reviewer-info { min-width: 0; }
+    .hmp-review-text { font-size: 15px; }
+  }
+  
+  @media (max-width: 480px) {
+    .hmp-hero-section { min-height: 520px; }
+    .hmp-hero-content { min-height: 360px; }
+    .hmp-hero-title { font-size: 28px; min-height: 80px; }
+    .hmp-hero-subtitle { font-size: 15px; min-height: 42px; }
+    .hmp-hero-description { font-size: 15px; min-height: 85px; }
+    .hmp-hero-cta { gap: 12px; }
+    .hmp-btn { width: 100%; max-width: 280px; padding: 12px 24px; font-size: 15px; }
+    .hmp-btn-large { padding: 14px 32px; font-size: 16px; max-width: 280px; }
+    .hmp-partner-item { width: 140px; padding: 15px; }
+    .hmp-partner-logo-container { height: 60px; }
+    .hmp-partner-logo-img { max-height: 60px; }
+    .hmp-partner-name { font-size: 12px; }
+    .hmp-cta-icon { font-size: 48px; }
+    .hmp-reviewer-avatar { width: 40px; height: 40px; font-size: 20px; }
+    .hmp-google-logo { width: 28px; height: 28px; font-size: 16px; }
+    .hmp-star { font-size: 20px; }
+    .hmp-slider-button { width: 40px; height: 40px; font-size: 24px; }
+    .hmp-google-review-card { padding: 20px 15px; }
+    .hmp-reviewer-name { font-size: 16px; }
+    .hmp-reviewer-role { font-size: 13px; }
+    .hmp-review-text { font-size: 14px; }
+    .hmp-testimonials-slider { padding: 0 5px; gap: 15px; }
+  }
+  
+  @media (max-width: 768px) and (orientation: landscape) {
+    .hmp-hero-section { min-height: 400px; padding: 60px 20px; }
+    .hmp-hero-navigation { bottom: 15px; }
+    .hmp-testimonials-slider { flex-direction: row; gap: 15px; }
+    .hmp-slider-button { width: 40px; height: 40px; }
+    .hmp-slider-prev { order: 1; }
+    .hmp-testimonials-content { order: 2; }
+    .hmp-slider-next { order: 3; }
+  }
+  
+  @media (max-width: 360px) {
+    .hmp-hero-section { min-height: 500px; }
+    .hmp-hero-content { min-height: 340px; }
+    .hmp-hero-title { font-size: 24px; min-height: 75px; }
+    .hmp-hero-subtitle { font-size: 14px; min-height: 40px; }
+    .hmp-hero-description { font-size: 14px; min-height: 80px; }
+    .hmp-hero-cta { gap: 10px; }
+    .hmp-btn { max-width: 260px; padding: 11px 20px; font-size: 14px; }
+    .hmp-btn-large { max-width: 260px; padding: 13px 28px; font-size: 15px; }
+    .hmp-section-title { font-size: 22px; }
+    .hmp-google-review-card { padding: 18px 12px; }
+    .hmp-slider-button { width: 36px; height: 36px; font-size: 22px; }
+    .hmp-testimonials-slider { gap: 12px; }
+  }
+  
+  /* ============================================
+     ACCESSIBILITY & PRINT STYLES
+     ============================================ */
+  
+  .hmp-btn:focus,
+  a:focus,
+  .hmp-dot:focus,
+  .hmp-slider-button:focus {
+    outline: 3px solid #ea580c;
+    outline-offset: 3px;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  
+  @media print {
+    .hmp-hero-section,
+    .hmp-cta-section {
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+    .hmp-btn {
+      border: 2px solid #000000 !important;
+      color: #000000 !important;
+    }
+    .hmp-service-card,
+    .hmp-why-card,
+    .hmp-work-card,
+    .hmp-google-review-card,
+    .hmp-trust-card,
+    .hmp-partner-item {
+      box-shadow: none !important;
+      border: 1px solid #cccccc !important;
+    }
+    .hmp-hero-dots,
+    .hmp-testimonial-dots,
+    .hmp-slider-button {
+      display: none !important;
+    }
+  }
+  
+  @media (prefers-contrast: high) {
+    .hmp-btn-primary,
+    .hmp-btn-secondary,
+    .hmp-btn-outline {
+      border-width: 3px;
+    }
+    .hmp-trust-card,
+    .hmp-service-card,
+    .hmp-why-card,
+    .hmp-work-card,
+    .hmp-google-review-card {
+      border: 2px solid #000000;
+    }
+  }

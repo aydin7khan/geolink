@@ -1,0 +1,1128 @@
+/* ============================================
+   GEOLINK SURVEY - ABOUT US PAGE STYLES (WITH IMAGES)
+   THEME: Navy Blue (#1a365d, #0f172a) + Orange (#ea580c, #f97316)
+   Matching Home page design system exactly
+   ============================================ */
+
+   .abt-page {
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .abt-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .abt-section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 20px;
+  }
+  
+  .abt-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background: linear-gradient(90deg, #ea580c, #f97316);
+    border-radius: 5px;
+  }
+  
+  /* ============================================
+     HERO SECTION WITH BACKGROUND IMAGE
+     ============================================ */
+  .abt-hero-section {
+    position: relative;
+    color: #ffffff;
+    padding: 120px 20px 100px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .abt-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .abt-hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .abt-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.88) 0%, rgba(15, 23, 42, 0.92) 100%);
+    z-index: 1;
+  }
+  
+  .abt-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .abt-hero-title {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .abt-hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    opacity: 0.95;
+    color: #fed7aa;
+  }
+  
+  .abt-hero-description {
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ============================================
+     COMPANY OVERVIEW SECTION WITH IMAGE
+     ============================================ */
+  .abt-overview-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .abt-overview-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .abt-overview-image-container {
+    flex: 0 0 450px;
+    position: relative;
+  }
+  
+  .abt-overview-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  .abt-overview-image-badge {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+    color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(234, 88, 12, 0.3);
+  }
+  
+  .abt-badge-text {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  
+  .abt-badge-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.95;
+  }
+  
+  .abt-overview-content {
+    flex: 1;
+  }
+  
+  .abt-overview-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .abt-overview-text strong {
+    color: #1a365d;
+    font-weight: 600;
+  }
+  
+  /* ============================================
+     MISSION, VISION & VALUES SECTION
+     ============================================ */
+  .abt-mvv-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .abt-mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .abt-mvv-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border-top: 4px solid #ea580c;
+  }
+  
+  .abt-mvv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.15);
+  }
+  
+  .abt-mvv-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .abt-mvv-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 15px;
+  }
+  
+  .abt-mvv-text {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+  }
+  
+  /* ============================================
+     EXPERTISE & TECHNOLOGY SECTION WITH IMAGES
+     ============================================ */
+  .abt-expertise-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .abt-expertise-content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .abt-expertise-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+  }
+  
+  .abt-expertise-intro p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+  }
+  
+  .abt-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .abt-expertise-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .abt-expertise-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(234, 88, 12, 0.12);
+    border-color: #ea580c;
+  }
+  
+  .abt-expertise-image-wrapper {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .abt-expertise-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .abt-expertise-item:hover .abt-expertise-image {
+    transform: scale(1.05);
+  }
+  
+  .abt-expertise-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(26, 54, 93, 0.3) 0%, rgba(15, 23, 42, 0.7) 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .abt-expertise-item:hover .abt-expertise-image-overlay {
+    background: linear-gradient(to bottom, rgba(26, 54, 93, 0.5) 0%, rgba(15, 23, 42, 0.85) 100%);
+  }
+  
+  .abt-expertise-content-box {
+    padding: 30px 25px;
+  }
+  
+  .abt-expertise-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .abt-expertise-content-box h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 12px;
+  }
+  
+  .abt-expertise-content-box p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+  }
+  
+  /* ============================================
+     WHY CHOOSE GEOLINK SECTION
+     ============================================ */
+  .abt-why-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .abt-why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+  }
+  
+  .abt-why-card {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .abt-why-card:hover {
+    border-color: #ea580c;
+    box-shadow: 0 8px 24px rgba(234, 88, 12, 0.12);
+    transform: translateY(-5px);
+  }
+  
+  .abt-why-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .abt-why-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 12px;
+  }
+  
+  .abt-why-card p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+  }
+  
+  /* ============================================
+     INDUSTRY FOCUS SECTION WITH IMAGES
+     ============================================ */
+  .abt-industry-section {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  }
+  
+  .abt-industry-content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .abt-industry-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #4b5563;
+  }
+  
+  .abt-industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .abt-industry-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .abt-industry-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(234, 88, 12, 0.12);
+    border-color: #ea580c;
+  }
+  
+  .abt-industry-image-wrapper {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .abt-industry-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .abt-industry-card:hover .abt-industry-image {
+    transform: scale(1.1);
+  }
+  
+  .abt-industry-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .abt-industry-card:hover .abt-industry-image-overlay {
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+  }
+  
+  .abt-industry-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .abt-industry-content-box {
+    padding: 25px;
+  }
+  
+  .abt-industry-content-box h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a2332;
+    margin-bottom: 12px;
+  }
+  
+  .abt-industry-content-box p {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+  }
+  
+  /* ============================================
+     LEADERSHIP SECTION WITH IMAGES
+     ============================================ */
+  .abt-leadership-section {
+    padding: 80px 20px;
+    background-color: #f8f9fb;
+  }
+  
+  .abt-leader-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .abt-leader-left {
+    flex-direction: row;
+  }
+  
+  .abt-leader-right {
+    flex-direction: row-reverse;
+  }
+  
+  .abt-leader-image-container {
+    flex: 0 0 350px;
+    position: relative;
+  }
+  
+  .abt-leader-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 4px solid #ffffff;
+  }
+  
+  .abt-leader-image-frame {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid #ea580c;
+    border-radius: 8px;
+    z-index: -1;
+  }
+  
+  .abt-leader-info-container {
+    flex: 1;
+  }
+  
+  .abt-leader-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a2332;
+    margin-bottom: 10px;
+  }
+  
+  .abt-leader-role {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ea580c;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #fff7ed;
+    border-radius: 4px;
+  }
+  
+  .abt-leader-bio {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .abt-leader-bio strong {
+    color: #1a365d;
+    font-style: italic;
+  }
+  
+  .abt-leader-expertise {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .abt-expertise-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    border: 2px solid #fed7aa;
+    color: #1a365d;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .abt-expertise-tag:hover {
+    background-color: #ea580c;
+    border-color: #ea580c;
+    color: #ffffff;
+  }
+  
+  .abt-founder-tribute {
+    background: linear-gradient(to right, rgba(26, 54, 93, 0.03) 0%, transparent 100%);
+    padding: 40px;
+    border-radius: 8px;
+  }
+  
+  /* ============================================
+     CALL TO ACTION SECTION
+     ============================================ */
+  .abt-cta-section {
+    background: linear-gradient(135deg, #1a365d 0%, #0f172a 100%);
+    padding: 90px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .abt-cta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .abt-cta-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 30% 50%, rgba(234, 88, 12, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(249, 115, 22, 0.15) 0%, transparent 50%);
+    animation: abtPatternFloat 10s ease-in-out infinite alternate;
+  }
+  
+  @keyframes abtPatternFloat {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(20px, 20px) scale(1.05); }
+  }
+  
+  .abt-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .abt-cta-icon {
+    font-size: 72px;
+    margin-bottom: 20px;
+    animation: abtIconBounce 2s ease-in-out infinite;
+  }
+  
+  @keyframes abtIconBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .abt-cta-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  
+  .abt-cta-text {
+    font-size: 18px;
+    color: #fed7aa;
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+  
+  .abt-cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .abt-cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .abt-cta-feature-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ea580c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  /* ============================================
+     BUTTON STYLES
+     ============================================ */
+  .abt-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .abt-btn-large {
+    padding: 16px 40px;
+    font-size: 18px;
+  }
+  
+  .abt-btn-cta-main {
+    background-color: #ea580c;
+    color: #ffffff;
+    border-color: #ea580c;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .abt-btn-arrow {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .abt-btn-cta-main:hover .abt-btn-arrow {
+    transform: translateX(5px);
+  }
+  
+  .abt-btn-cta-main:hover {
+    background-color: #c2410c;
+    border-color: #c2410c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(234, 88, 12, 0.3);
+  }
+  
+  .abt-cta-subtext {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fed7aa;
+    font-style: italic;
+  }
+  
+  /* ============================================
+     RESPONSIVE DESIGN
+     ============================================ */
+  
+  @media (max-width: 992px) {
+    .abt-hero-title {
+      font-size: 42px;
+    }
+  
+    .abt-hero-subtitle {
+      font-size: 18px;
+    }
+  
+    .abt-hero-description {
+      font-size: 16px;
+    }
+  
+    .abt-section-title {
+      font-size: 32px;
+    }
+  
+    .abt-cta-title {
+      font-size: 36px;
+    }
+  
+    .abt-cta-icon {
+      font-size: 60px;
+    }
+  
+    .abt-overview-wrapper {
+      gap: 40px;
+    }
+  
+    .abt-overview-image-container {
+      flex: 0 0 380px;
+    }
+  
+    .abt-overview-image {
+      height: 450px;
+    }
+  
+    .abt-mvv-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .abt-expertise-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .abt-leader-wrapper {
+      gap: 40px;
+    }
+  
+    .abt-leader-image-container {
+      flex: 0 0 300px;
+    }
+  
+    .abt-leader-image {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .abt-hero-section {
+      padding: 80px 20px 80px;
+      min-height: 500px;
+    }
+  
+    .abt-hero-title {
+      font-size: 34px;
+    }
+  
+    .abt-hero-subtitle {
+      font-size: 16px;
+    }
+  
+    .abt-hero-description {
+      font-size: 15px;
+    }
+  
+    .abt-section-title {
+      font-size: 28px;
+      margin-bottom: 40px;
+      padding-bottom: 15px;
+    }
+  
+    .abt-overview-section,
+    .abt-mvv-section,
+    .abt-expertise-section,
+    .abt-why-section,
+    .abt-industry-section,
+    .abt-leadership-section {
+      padding: 60px 20px;
+    }
+  
+    /* Who We Are - Mobile Layout */
+    .abt-overview-wrapper {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .abt-overview-image-container {
+      flex: 0 0 auto;
+      width: 100%;
+      order: 1;
+    }
+  
+    .abt-overview-image {
+      height: 350px;
+    }
+  
+    .abt-overview-content {
+      order: 2;
+    }
+  
+    .abt-overview-text p {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .abt-overview-image-badge {
+      bottom: 20px;
+      right: 20px;
+      padding: 15px 25px;
+    }
+  
+    .abt-badge-text {
+      font-size: 32px;
+    }
+  
+    /* Leadership - Mobile Layout */
+    .abt-leader-wrapper {
+      flex-direction: column !important;
+      gap: 30px;
+    }
+  
+    .abt-leader-image-container {
+      flex: 0 0 auto;
+      width: 100%;
+      order: 1;
+    }
+  
+    .abt-leader-info-container {
+      order: 2;
+    }
+  
+    .abt-leader-image {
+      height: 400px;
+    }
+  
+    .abt-founder-tribute {
+      padding: 30px 20px;
+    }
+  
+    .abt-mvv-card,
+    .abt-expertise-item,
+    .abt-why-card,
+    .abt-industry-card {
+      padding: 30px 25px;
+    }
+  
+    .abt-expertise-content-box {
+      padding: 25px 20px;
+    }
+  
+    .abt-industry-content-box {
+      padding: 20px;
+    }
+  
+    .abt-cta-section {
+      padding: 70px 20px;
+    }
+  
+    .abt-cta-icon {
+      font-size: 56px;
+    }
+  
+    .abt-cta-title {
+      font-size: 28px;
+    }
+  
+    .abt-cta-text {
+      font-size: 16px;
+    }
+  
+    .abt-cta-features {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .abt-hero-section {
+      min-height: 450px;
+    }
+  
+    .abt-hero-title {
+      font-size: 28px;
+    }
+  
+    .abt-hero-subtitle {
+      font-size: 15px;
+    }
+  
+    .abt-hero-description {
+      font-size: 15px;
+    }
+  
+    .abt-btn {
+      width: 100%;
+      max-width: 280px;
+      padding: 12px 24px;
+      font-size: 15px;
+    }
+  
+    .abt-btn-large {
+      padding: 14px 32px;
+      font-size: 16px;
+      max-width: 280px;
+    }
+  
+    .abt-section-title {
+      font-size: 24px;
+    }
+  
+    .abt-overview-image {
+      height: 300px;
+    }
+  
+    .abt-leader-image {
+      height: 350px;
+    }
+  
+    .abt-cta-icon {
+      font-size: 48px;
+    }
+  
+    .abt-mvv-card,
+    .abt-expertise-item,
+    .abt-why-card,
+    .abt-industry-card {
+      padding: 25px 20px;
+    }
+  
+    .abt-mvv-icon,
+    .abt-expertise-icon,
+    .abt-why-icon {
+      font-size: 40px;
+    }
+  
+    .abt-industry-number {
+      font-size: 32px;
+    }
+  
+    .abt-leader-name {
+      font-size: 24px;
+    }
+  
+    .abt-leader-role {
+      font-size: 16px;
+    }
+  
+    .abt-leader-bio {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .abt-hero-section {
+      min-height: 420px;
+    }
+  
+    .abt-hero-title {
+      font-size: 24px;
+    }
+  
+    .abt-hero-subtitle {
+      font-size: 14px;
+    }
+  
+    .abt-hero-description {
+      font-size: 14px;
+    }
+  
+    .abt-btn {
+      max-width: 260px;
+      padding: 11px 20px;
+      font-size: 14px;
+    }
+  
+    .abt-btn-large {
+      max-width: 260px;
+      padding: 13px 28px;
+      font-size: 15px;
+    }
+  
+    .abt-section-title {
+      font-size: 22px;
+    }
+  
+    .abt-overview-image {
+      height: 280px;
+    }
+  
+    .abt-leader-image {
+      height: 320px;
+    }
+  }
+  
+  /* ============================================
+     ACCESSIBILITY & PRINT STYLES
+     ============================================ */
+  
+  .abt-btn:focus,
+  a:focus {
+    outline: 3px solid #ea580c;
+    outline-offset: 3px;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  
+  @media print {
+    .abt-hero-section,
+    .abt-cta-section {
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+  
+    .abt-btn {
+      border: 2px solid #000000 !important;
+      color: #000000 !important;
+    }
+  
+    .abt-mvv-card,
+    .abt-expertise-item,
+    .abt-why-card,
+    .abt-industry-card {
+      box-shadow: none !important;
+      border: 1px solid #cccccc !important;
+    }
+  
+    .abt-overview-image,
+    .abt-expertise-image,
+    .abt-industry-image,
+    .abt-leader-image {
+      page-break-inside: avoid;
+    }
+  }
+  
+  @media (prefers-contrast: high) {
+    .abt-btn {
+      border-width: 3px;
+    }
+  
+    .abt-mvv-card,
+    .abt-expertise-item,
+    .abt-why-card,
+    .abt-industry-card {
+      border: 2px solid #000000;
+    }
+  }

@@ -1,0 +1,26 @@
+/* GLOBAL RESET - Makes all browsers display things the same way */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY STYLING - The main container of the website */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* MAKE SURE IMAGES DON'T OVERFLOW */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* LINK STYLING */
+a {
+  text-decoration: none;
+  color: inherit;
+}
