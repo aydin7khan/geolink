@@ -1,15 +1,41 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../styles/Achievements.css';
 
 // Import certificate images - REPLACE with your actual certificate paths
-import iso9001Cert from '../../assets/hero-1.webp';
-import iso45001Cert from '../../assets/hero-1.webp';
-import iso27001Cert from '../../assets/hero-1.webp';
-import iso14001Cert from '../../assets/hero-1.webp';
-import msmeCert from '../../assets/hero-1.webp';
+import iso9001Cert from '../../assets/cer1.jpeg';
+import iso45001Cert from '../../assets/cer2.jpeg';
+import iso27001Cert from '../../assets/cer3.jpeg';
+import iso14001Cert from '../../assets/cer4.jpeg';
+import msmeCert from '../../assets/cer5.jpeg';
 import startupIndiaCert from '../../assets/hero-1.webp';
+
+// Import trusted organizations logos from partners folder (same set as homepage)
+import auroLogo from '../../assets/partners/auro.png';
+import bdaLogo from '../../assets/partners/BDA.png';
+import dewasDevelopmentLogo from '../../assets/partners/dewas development.png';
+import dgmLogo from '../../assets/partners/dgm.png';
+import hpLogo from '../../assets/partners/hp.png';
+import larsenTourboLogo from '../../assets/partners/larsen&tourbo.png';
+import meinhardtLogo from '../../assets/partners/meinhardt.png';
+import mpidcLogo from '../../assets/partners/mpidc.png';
+import mptLogo from '../../assets/partners/mpt.png';
+import mpwrdLogo from '../../assets/partners/mpwrd.png';
+import municipalCorporationLogo from '../../assets/partners/municipal corporation.png';
+import nhdcLogo from '../../assets/partners/nhdc.png';
+import noorusLogo from '../../assets/partners/noorus.png';
+import northernRailwayLogo from '../../assets/partners/northernrailway.png';
+import powerGeneratingLogo from '../../assets/partners/powergenerating.png';
+import punjlloydLogo from '../../assets/partners/punjlloyd.png';
+import relianceLogo from '../../assets/partners/reliance.png';
+import roltaLogo from '../../assets/partners/Rolta.png';
+import rumsLogo from '../../assets/partners/rums.png';
+import smecLogo from '../../assets/partners/smec.png';
+import ultratechLogo from '../../assets/partners/ultratech.png';
+import upjalnigamLogo from '../../assets/partners/upjalnigam.png';
+import waterAgencyLogo from '../../assets/partners/wateragency.png';
 
 function Achievements() {
   // Animation variants matching Home page
@@ -86,31 +112,31 @@ function Achievements() {
     }
   ];
 
-  // Client organizations - REPLACE with your actual logo paths
+  // Client organizations - logos from partners folder (same set as homepage)
   const trustedOrganizations = [
-    { id: 'ach-client-1', name: 'Ministry of Defence', logo: '/images/clients/defence-ministry.png' },
-    { id: 'ach-client-2', name: 'Reliance Industries Limited', logo: '/images/clients/reliance.png' },
-    { id: 'ach-client-3', name: 'UltraTech Cement Limited', logo: '/images/clients/ultratech.png' },
-    { id: 'ach-client-4', name: 'Airport Authority of India', logo: '/images/clients/aai.png' },
-    { id: 'ach-client-5', name: 'Madhya Pradesh Industrial Development Corporation', logo: '/images/clients/mpidc.png' },
-    { id: 'ach-client-6', name: 'MP State Tourism Development Corporation', logo: '/images/clients/mpstdc.png' },
-    { id: 'ach-client-7', name: 'Directorate of Geology and Mining', logo: '/images/clients/geology.png' },
-    { id: 'ach-client-8', name: 'Cantonment Board Babina', logo: '/images/clients/cantonment-babina.png' },
-    { id: 'ach-client-9', name: 'Rewa Ultra Mega Solar Limited', logo: '/images/clients/rewa-solar.png' },
-    { id: 'ach-client-10', name: 'Public Works Department', logo: '/images/clients/pwd.png' },
-    { id: 'ach-client-11', name: 'National Highways Authority of India', logo: '/images/clients/nhai.png' },
-    { id: 'ach-client-12', name: 'Madhya Pradesh Road Development Corporation', logo: '/images/clients/mprdc.png' },
-    { id: 'ach-client-13', name: 'Coal India Limited', logo: '/images/clients/coal-india.png' },
-    { id: 'ach-client-14', name: 'Hindalco Industries', logo: '/images/clients/hindalco.png' },
-    { id: 'ach-client-15', name: 'Adani Group', logo: '/images/clients/adani.png' },
-    { id: 'ach-client-16', name: 'Larsen & Toubro', logo: '/images/clients/lt.png' },
-    { id: 'ach-client-17', name: 'Tata Projects', logo: '/images/clients/tata-projects.png' },
-    { id: 'ach-client-18', name: 'GMR Infrastructure', logo: '/images/clients/gmr.png' },
-    { id: 'ach-client-19', name: 'Shapoorji Pallonji', logo: '/images/clients/shapoorji.png' },
-    { id: 'ach-client-20', name: 'IRB Infrastructure', logo: '/images/clients/irb.png' },
-    { id: 'ach-client-21', name: 'Ahluwalia Contracts', logo: '/images/clients/ahluwalia.png' },
-    { id: 'ach-client-22', name: 'NCC Limited', logo: '/images/clients/ncc.png' },
-    { id: 'ach-client-23', name: 'Simplex Infrastructures', logo: '/images/clients/simplex.png' }
+    { id: 'ach-client-1', name: 'auro', logo: auroLogo },
+    { id: 'ach-client-2', name: 'BDA', logo: bdaLogo },
+    { id: 'ach-client-3', name: 'dewas development', logo: dewasDevelopmentLogo },
+    { id: 'ach-client-4', name: 'dgm', logo: dgmLogo },
+    { id: 'ach-client-5', name: 'hp', logo: hpLogo },
+    { id: 'ach-client-6', name: 'larsen&tourbo', logo: larsenTourboLogo },
+    { id: 'ach-client-7', name: 'meinhardt', logo: meinhardtLogo },
+    { id: 'ach-client-8', name: 'mpidc', logo: mpidcLogo },
+    { id: 'ach-client-9', name: 'mpt', logo: mptLogo },
+    { id: 'ach-client-10', name: 'mpwrd', logo: mpwrdLogo },
+    { id: 'ach-client-11', name: 'municipal corporation', logo: municipalCorporationLogo },
+    { id: 'ach-client-12', name: 'nhdc', logo: nhdcLogo },
+    { id: 'ach-client-13', name: 'noorus', logo: noorusLogo },
+    { id: 'ach-client-14', name: 'northernrailway', logo: northernRailwayLogo },
+    { id: 'ach-client-15', name: 'powergenerating', logo: powerGeneratingLogo },
+    { id: 'ach-client-16', name: 'punjlloyd', logo: punjlloydLogo },
+    { id: 'ach-client-17', name: 'reliance', logo: relianceLogo },
+    { id: 'ach-client-18', name: 'Rolta', logo: roltaLogo },
+    { id: 'ach-client-19', name: 'rums', logo: rumsLogo },
+    { id: 'ach-client-20', name: 'smec', logo: smecLogo },
+    { id: 'ach-client-21', name: 'ultratech', logo: ultratechLogo },
+    { id: 'ach-client-22', name: 'upjalnigam', logo: upjalnigamLogo },
+    { id: 'ach-client-23', name: 'wateragency', logo: waterAgencyLogo }
   ];
 
   // Experience and scale statistics
@@ -279,7 +305,6 @@ function Achievements() {
                     className="ach-client-logo"
                   />
                 </div>
-                <div className="ach-client-name">{client.name}</div>
               </motion.div>
             ))}
           </motion.div>

@@ -3,19 +3,20 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
 
+import dgpsExpertiseImage from '../../assets/services/DGPS.png';
+import droneExpertiseImage from '../../assets/services/Drone.png';
+import gisExpertiseImage from '../../assets/services/GIS.png';
+import instrumentExpertiseImage from '../../assets/services/Total Station Survey.png';
+
 // Import images - REPLACE THESE PATHS WITH YOUR ACTUAL IMAGE PATHS
 import heroImage from '../../assets/hero-1.webp';
 import companyImage from '../../assets/hero-1.webp';
-import dgpsExpertiseImage from '../../assets/hero-1.webp';
-import droneExpertiseImage from '../../assets/hero-1.webp';
-import gisExpertiseImage from '../../assets/hero-1.webp';
-import instrumentExpertiseImage from '../../assets/hero-1.webp';
-import governmentIndustryImage from '../../assets/hero-1.webp';
-import infrastructureIndustryImage from '../../assets/hero-1.webp';
-import miningIndustryImage from '../../assets/hero-1.webp';
-import defenceIndustryImage from '../../assets/hero-1.webp';
-import energyIndustryImage from '../../assets/hero-1.webp';
-import aviationIndustryImage from '../../assets/hero-1.webp';
+import governmentIndustryImage from '../../assets/services/governmentdep.png';
+import infrastructureIndustryImage from '../../assets/services/infrastructuredep.png';
+import miningIndustryImage from '../../assets/services/miningdep.png';
+import defenceIndustryImage from '../../assets/services/defencedep.png';
+import energyIndustryImage from '../../assets/services/energydep.png';
+import aviationIndustryImage from '../../assets/services/transportdep.png';
 import lubnaImage from '../../assets/hero-1.webp';
 import murtazaImage from '../../assets/hero-1.webp';
 

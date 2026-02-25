@@ -1,37 +1,38 @@
 import React, { useState, useEffect, useRef } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../styles/Services.css';
-
-// Import images - REPLACE THESE PATHS WITH YOUR ACTUAL IMAGE PATHS
 import heroImage from '../../assets/hero-1.webp';
-import dgpsImage from '../../assets/hero-1.webp';
-import droneImage from '../../assets/hero-1.webp';
-import topoImage from '../../assets/hero-1.webp';
-import contourImage from '../../assets/hero-1.webp';
-import cadastralImage from '../../assets/hero-1.webp';
-import gisImage from '../../assets/hero-1.webp';
-import mineImage from '../../assets/hero-1.webp';
-import asBuiltImage from '../../assets/hero-1.webp';
-import roadImage from '../../assets/hero-1.webp';
-import powerLineImage from '../../assets/hero-1.webp';
-import irrigationImage from '../../assets/hero-1.webp';
-import pipelineImage from '../../assets/hero-1.webp';
-import waterSupplyImage from '../../assets/hero-1.webp';
-import ofcImage from '../../assets/hero-1.webp';
-import demarcationImage from '../../assets/hero-1.webp';
-import layoutImage from '../../assets/hero-1.webp';
-import ecImage from '../../assets/hero-1.webp';
-import eiaImage from '../../assets/hero-1.webp';
-import orthoImage from '../../assets/hero-1.webp';
-import demImage from '../../assets/hero-1.webp';
-import totalStationImage from '../../assets/hero-1.webp';
-import lidarImage from '../../assets/hero-1.webp';
-import lSectionImage from '../../assets/hero-1.webp';
-import alignmentImage from '../../assets/hero-1.webp';
-import bathymetricImage from '../../assets/hero-1.webp';
-import railRoadImage from '../../assets/hero-1.webp';
-import satelliteImage from '../../assets/hero-1.webp';
+
+// Service card images (one per service)
+import dgpsSurveyImage from '../../assets/services/DGPS.png';
+import droneSurveyImage from '../../assets/services/Drone.png';
+import topographicalSurveyImage from '../../assets/services/Topographical.png';
+import contourSurveyImage from '../../assets/services/Contour.png';
+import cadastralMappingImage from '../../assets/services/Cadastral.png';
+import gisMappingImage from '../../assets/services/GIS.png';
+import mineSurveyImage from '../../assets/services/Mining.png';
+import asBuiltSurveyImage from '../../assets/services/As-Built.png';
+import roadSurveyImage from '../../assets/services/Road.png';
+import powerTransmissionLineSurveyImage from '../../assets/services/power-transmission.png';
+import irrigationSurveyImage from '../../assets/services/Irrigation.png';
+import pipelineRouteSurveyImage from '../../assets/services/Pipeline.png';
+import waterSupplyNetworkSurveyImage from '../../assets/services/Water Supply Network Survey.png';
+import ofcSurveyImage from '../../assets/services/OFC.png';
+import demarcationOfLandBoundariesImage from '../../assets/services/Demarcation.png';
+import layoutPlanningImage from '../../assets/services/Layout Planning.png';
+import environmentClearanceImage from '../../assets/services/Environment Clearance.png';
+import environmentImpactAssessmentImage from '../../assets/services/EIA.png';
+import orthoRectificationImage from '../../assets/services/Ortho-rectification.png';
+import demDtmDsmGenerationImage from '../../assets/services/DEM, DTM & DSM Generation.png';
+import totalStationSurveyImage from '../../assets/services/Total Station Survey.png';
+import lidarSurveyImage from '../../assets/services/LiDAR Survey.png';
+import lSectionCrossSectionImage from '../../assets/services/L-Section & Cross Section.png';
+import alignmentSurveyImage from '../../assets/services/Alignment Survey.png';
+import bathymetricSurveyImage from '../../assets/services/Bathymetric.png';
+import railRoadSurveyImage from '../../assets/services/Rail-Road Survey.png';
+import satelliteImageProcessingImage from '../../assets/services/sattelite.png';
 
 // Animated Counter Component (from Homepage)
 const AnimatedCounter = ({ end, duration = 2000, suffix = "" }) => {
@@ -74,13 +75,15 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "" }) => {
       }
     );
 
-    if (counterRef.current) {
-      observer.observe(counterRef.current);
+    const currentRef = counterRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (counterRef.current) {
-        observer.unobserve(counterRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [hasAnimated]);
@@ -112,39 +115,39 @@ function Services() {
   // Our Expertise - 6 Key Services
   const expertiseServices = [
     {
-      image: topoImage,
       icon: "⛰️",
       title: "Topographical Survey",
+      image: topographicalSurveyImage,
       description: "Detailed land surveys identifying natural and man-made features, elevations, terrain specifications, and site characteristics essential for construction planning and engineering design."
     },
     {
-      image: contourImage,
       icon: "📏",
       title: "Contour Survey",
+      image: contourSurveyImage,
       description: "Visual representation of land topography and elevation changes to understand water flow, erosion patterns, and drainage characteristics crucial for development and planning."
     },
     {
-      image: cadastralImage,
       icon: "🗺️",
       title: "Cadastral Mapping",
+      image: cadastralMappingImage,
       description: "Comprehensive legal documentation of land parcels including quantity, dimensions, location, value, tenure, and ownership with geo-referenced accuracy for land revenue records."
     },
     {
-      image: mineImage,
       icon: "⛏️",
       title: "Mine Survey",
+      image: mineSurveyImage,
       description: "Mining area boundary demarcation, cadastral map preparation, geo-referencing, and establishment of boundary pillars using DGPS and Total Station technology for regulatory compliance."
     },
     {
-      image: droneImage,
       icon: "🚁",
       title: "Drone Survey",
+      image: droneSurveyImage,
       description: "Unmanned Aerial Vehicle surveying delivering high-resolution aerial images, 3D models, contours, DTM, DSM, cloud point data, and comprehensive videography for large-scale projects."
     },
     {
-      image: satelliteImage,
       icon: "🛰️",
       title: "Satellite Image Processing",
+      image: satelliteImageProcessingImage,
       description: "Advanced processing of satellite imagery including ortho-rectification, geo-referencing, classification, and analysis for mapping, planning, and environmental monitoring applications."
     }
   ];
@@ -152,159 +155,159 @@ function Services() {
   // All 27 services data
   const allServices = [
     {
-      image: dgpsImage,
       icon: "📡",
       title: "DGPS Survey",
+      image: dgpsSurveyImage,
       description: "Differential Global Positioning System surveying for precise positioning, boundary demarcation, and geo-referencing with sub-meter accuracy for legal compliance and cadastral mapping."
     },
     {
-      image: droneImage,
       icon: "🚁",
       title: "Drone Survey",
+      image: droneSurveyImage,
       description: "Unmanned Aerial Vehicle surveying delivering high-resolution aerial images, 3D models, contours, DTM, DSM, cloud point data, and comprehensive videography for large-scale projects."
     },
     {
-      image: topoImage,
       icon: "⛰️",
       title: "Topographical Survey",
+      image: topographicalSurveyImage,
       description: "Detailed land surveys identifying natural and man-made features, elevations, terrain specifications, and site characteristics essential for construction planning and engineering design."
     },
     {
-      image: contourImage,
       icon: "📏",
       title: "Contour Survey",
+      image: contourSurveyImage,
       description: "Visual representation of land topography and elevation changes to understand water flow, erosion patterns, and drainage characteristics crucial for development and planning."
     },
     {
-      image: cadastralImage,
       icon: "🗺️",
       title: "Cadastral Mapping",
+      image: cadastralMappingImage,
       description: "Comprehensive legal documentation of land parcels including quantity, dimensions, location, value, tenure, and ownership with geo-referenced accuracy for land revenue records."
     },
     {
-      image: gisImage,
       icon: "🌍",
       title: "GIS Mapping",
+      image: gisMappingImage,
       description: "Geographic Information Systems for spatial data analysis, database management, automated enterprise workflows, and informed decision-making with advanced geospatial technology."
     },
     {
-      image: mineImage,
       icon: "⛏️",
       title: "Mine Survey",
+      image: mineSurveyImage,
       description: "Mining area boundary demarcation, cadastral map preparation, geo-referencing, and establishment of boundary pillars using DGPS and Total Station technology for regulatory compliance."
     },
     {
-      image: asBuiltImage,
       icon: "📐",
       title: "As-Built Survey",
+      image: asBuiltSurveyImage,
       description: "Post-construction documentation capturing actual positions, dimensions, and specifications of completed structures, utilities, and infrastructure for record-keeping and future reference."
     },
     {
-      image: roadImage,
       icon: "🛣️",
       title: "Road Survey",
+      image: roadSurveyImage,
       description: "Comprehensive road network surveys including alignment, cross-sections, profiles, and topographical mapping for highway construction, maintenance, and widening projects spanning 5000+ KM."
     },
     {
-      image: powerLineImage,
       icon: "⚡",
       title: "Power Transmission Line Survey",
+      image: powerTransmissionLineSurveyImage,
       description: "Precise route surveys for power transmission corridors including tower positioning, clearance analysis, terrain mapping, and right-of-way documentation for electrical infrastructure."
     },
     {
-      image: irrigationImage,
       icon: "💧",
       title: "Irrigation Survey",
+      image: irrigationSurveyImage,
       description: "Detailed surveys for irrigation projects including canal alignment, watershed analysis, water distribution networks, and agricultural land mapping for optimal water resource management."
     },
     {
-      image: pipelineImage,
       icon: "🔧",
       title: "Pipeline Route Survey",
+      image: pipelineRouteSurveyImage,
       description: "Accurate route planning and surveying for oil, gas, water, and sewage pipelines including topographical mapping, obstacle identification, and right-of-way determination."
     },
     {
-      image: waterSupplyImage,
       icon: "🚰",
       title: "Water Supply Network Survey",
+      image: waterSupplyNetworkSurveyImage,
       description: "Comprehensive mapping of water distribution systems including pipeline networks, storage facilities, pumping stations, and service connections for municipal and industrial applications."
     },
     {
-      image: ofcImage,
       icon: "📶",
       title: "OFC Survey",
+      image: ofcSurveyImage,
       description: "Optical Fiber Cable route surveys for telecommunication infrastructure including underground and overhead cable routes, junction points, and network mapping for connectivity projects."
     },
     {
-      image: demarcationImage,
       icon: "📍",
       title: "Demarcation of Land Boundaries",
+      image: demarcationOfLandBoundariesImage,
       description: "Precise identification and marking of property boundaries using DGPS technology, establishing permanent markers, and creating legally defensible boundary documentation for land disputes."
     },
     {
-      image: layoutImage,
       icon: "🏘️",
       title: "Layout Planning / Plotting of Land",
+      image: layoutPlanningImage,
       description: "Professional land subdivision planning, plot demarcation, and layout design for residential, commercial, and industrial developments ensuring optimal land utilization and compliance."
     },
     {
-      image: ecImage,
       icon: "🌱",
       title: "Environment Clearance (EC)",
+      image: environmentClearanceImage,
       description: "Comprehensive surveys and documentation for environmental clearance applications including baseline data collection, impact zone mapping, and regulatory compliance support."
     },
     {
-      image: eiaImage,
       icon: "🔍",
       title: "Environment Impact Assessment (EIA)",
+      image: environmentImpactAssessmentImage,
       description: "Detailed environmental impact studies including baseline surveys, ecological mapping, pollution assessment, and mitigation planning for sustainable development projects."
     },
     {
-      image: orthoImage,
       icon: "🛰️",
       title: "Ortho-rectification",
+      image: orthoRectificationImage,
       description: "Processing of aerial and satellite imagery to remove distortions and create accurate, georeferenced orthophotos suitable for mapping, planning, and GIS applications."
     },
     {
-      image: demImage,
       icon: "🏔️",
       title: "DEM, DTM & DSM Generation",
+      image: demDtmDsmGenerationImage,
       description: "Creation of Digital Elevation Models, Digital Terrain Models, and Digital Surface Models from drone surveys, LiDAR data, or satellite imagery for terrain analysis and planning."
     },
     {
-      image: totalStationImage,
       icon: "🎯",
       title: "Total Station Survey",
+      image: totalStationSurveyImage,
       description: "High-precision surveys using Total Station instruments with 1-second accuracy for construction layout, as-built surveys, alignment verification, and detailed topographical mapping."
     },
     {
-      image: lidarImage,
       icon: "📊",
       title: "LiDAR Survey",
+      image: lidarSurveyImage,
       description: "Light Detection and Ranging technology for ultra-precise 3D mapping, terrain modeling, vegetation analysis, and infrastructure surveys with centimeter-level accuracy."
     },
     {
-      image: lSectionImage,
       icon: "📉",
       title: "L-Section & Cross Section",
+      image: lSectionCrossSectionImage,
       description: "Longitudinal and cross-sectional profile surveys for roads, canals, railways, and pipelines providing detailed elevation data for design, construction, and earthwork calculations."
     },
     {
-      image: alignmentImage,
       icon: "↔️",
       title: "Alignment Survey",
+      image: alignmentSurveyImage,
       description: "Precise centerline and alignment surveys for linear infrastructure projects including roads, railways, canals, and pipelines ensuring accurate construction layout and positioning."
     },
     {
-      image: bathymetricImage,
       icon: "🌊",
       title: "Bathymetric Survey",
+      image: bathymetricSurveyImage,
       description: "Underwater depth mapping and sea floor topography for water bodies including rivers, lakes, reservoirs, and coastal areas supporting dredging, navigation, and water resource projects."
     },
     {
-      image: railRoadImage,
       icon: "🚂",
       title: "Rail-Road Survey",
+      image: railRoadSurveyImage,
       description: "Specialized surveys for railway infrastructure including track alignment, station layouts, bridge and tunnel positioning, and integration with road networks for transportation planning."
     }
   ];

@@ -4,9 +4,40 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 // Import hero images
-import hero1Image from '../../assets/hero-1.webp';
-import hero2Image from '../../assets/hero-2.jpg';
-import hero3Image from '../../assets/hero-3.jpg';
+import hero1Image from '../../assets/ultratech.jpeg';
+import hero2Image from '../../assets/miningdep1.jpg';
+import hero3Image from '../../assets/airport2.jpeg';
+// Import service images for homepage services section
+import dgpsSurveyImage from '../../assets/services/DGPS.png';
+import droneSurveyImage from '../../assets/services/Drone.png';
+import cadastralMappingImage from '../../assets/services/Cadastral.png';
+import gisMappingImage from '../../assets/services/GIS.png';
+import topographicalSurveyImage from '../../assets/services/Topographical.png';
+import mineSurveyImage from '../../assets/services/Mining.png';
+// Import trusted partners logos (use filenames exactly as in /assets/partners)
+import auroLogo from '../../assets/partners/auro.png';
+import bdaLogo from '../../assets/partners/BDA.png';
+import dewasDevelopmentLogo from '../../assets/partners/dewas development.png';
+import dgmLogo from '../../assets/partners/dgm.png';
+import hpLogo from '../../assets/partners/hp.png';
+import larsenTourboLogo from '../../assets/partners/larsen&tourbo.png';
+import meinhardtLogo from '../../assets/partners/meinhardt.png';
+import mpidcLogo from '../../assets/partners/mpidc.png';
+import mptLogo from '../../assets/partners/mpt.png';
+import mpwrdLogo from '../../assets/partners/mpwrd.png';
+import municipalCorporationLogo from '../../assets/partners/municipal corporation.png';
+import nhdcLogo from '../../assets/partners/nhdc.png';
+import noorusLogo from '../../assets/partners/noorus.png';
+import northernRailwayLogo from '../../assets/partners/northernrailway.png';
+import powerGeneratingLogo from '../../assets/partners/powergenerating.png';
+import punjlloydLogo from '../../assets/partners/punjlloyd.png';
+import relianceLogo from '../../assets/partners/reliance.png';
+import roltaLogo from '../../assets/partners/Rolta.png';
+import rumsLogo from '../../assets/partners/rums.png';
+import smecLogo from '../../assets/partners/smec.png';
+import ultratechLogo from '../../assets/partners/ultratech.png';
+import upjalnigamLogo from '../../assets/partners/upjalnigam.png';
+import waterAgencyLogo from '../../assets/partners/wateragency.png';
 
 const AnimatedCounter = ({ end, duration = 2000, suffix = "" }) => {
   const [count, setCount] = useState(0);
@@ -114,52 +145,65 @@ function Home() {
     { 
       icon: "📡", 
       title: "DGPS Survey", 
-      desc: "Differential GPS surveying for precise positioning and boundary demarcation with advanced geo-referencing capabilities.", 
-      image: hero1Image
+      desc: "Differential GPS surveying for precise positioning and boundary demarcation with advanced geo-referencing capabilities.",
+      image: dgpsSurveyImage
     },
     { 
       icon: "🚁", 
       title: "Drone Survey", 
-      desc: "Unmanned aerial vehicle surveying delivering high-resolution images, 3D models, contours, DTM, DSM, and cloud point data.", 
-      image: hero1Image
+      desc: "Unmanned aerial vehicle surveying delivering high-resolution images, 3D models, contours, DTM, DSM, and cloud point data.",
+      image: droneSurveyImage
     },
     { 
       icon: "🗺️", 
       title: "Cadastral Mapping", 
-      desc: "Comprehensive cadastral mapping with legal documentation for land parcels, boundaries, ownership, and geo-referenced records.", 
-      image: hero1Image
+      desc: "Comprehensive cadastral mapping with legal documentation for land parcels, boundaries, ownership, and geo-referenced records.",
+      image: cadastralMappingImage
     },
     { 
       icon: "🌍", 
       title: "GIS Mapping", 
-      desc: "Geographic Information Systems for spatial data analysis, management, and automated enterprise work processes.", 
-      image: hero1Image
+      desc: "Geographic Information Systems for spatial data analysis, management, and automated enterprise work processes.",
+      image: gisMappingImage
     },
     { 
       icon: "⛰️", 
       title: "Topographical Survey", 
-      desc: "Detailed topographic land surveys identifying natural and man-made features, elevations, and terrain specifications.", 
-      image: hero1Image
+      desc: "Detailed topographic land surveys identifying natural and man-made features, elevations, and terrain specifications.",
+      image: topographicalSurveyImage
     },
     { 
       icon: "⛏️", 
       title: "Mine Survey", 
-      desc: "Mining area boundary fixing, cadastral map preparation, and geo-referenced mapping using DGPS and Total Station technology.", 
-      image: hero1Image
+      desc: "Mining area boundary fixing, cadastral map preparation, and geo-referenced mapping using DGPS and Total Station technology.",
+      image: mineSurveyImage
     }
   ];
 
   const partners = [
-    { name: "Defence Ministry", logo: "/images/partners/defence-ministry.png" }, // REPLACE THIS
-    { name: "Reliance Industries", logo: "/images/partners/reliance.png" }, // REPLACE THIS
-    { name: "Ultra Tech Cement", logo: "/images/partners/ultratech.png" }, // REPLACE THIS
-    { name: "Airport Authority of India", logo: "/images/partners/aai.png" }, // REPLACE THIS
-    { name: "MPIDC", logo: "/images/partners/mpidc.png" }, // REPLACE THIS
-    { name: "MPSTDC", logo: "/images/partners/mpstdc.png" }, // REPLACE THIS
-    { name: "Directorate of Geology", logo: "/images/partners/geology.png" }, // REPLACE THIS
-    { name: "Cantonment Board", logo: "/images/partners/cantonment.png" }, // REPLACE THIS
-    { name: "Rewa Ultra Mega Solar", logo: "/images/partners/rewa-solar.png" }, // REPLACE THIS
-    { name: "PWD", logo: "/images/partners/pwd.png" } // REPLACE THIS
+    { name: "auro", logo: auroLogo },
+    { name: "BDA", logo: bdaLogo },
+    { name: "dewas development", logo: dewasDevelopmentLogo },
+    { name: "dgm", logo: dgmLogo },
+    { name: "hp", logo: hpLogo },
+    { name: "larsen&tourbo", logo: larsenTourboLogo },
+    { name: "meinhardt", logo: meinhardtLogo },
+    { name: "mpidc", logo: mpidcLogo },
+    { name: "mpt", logo: mptLogo },
+    { name: "mpwrd", logo: mpwrdLogo },
+    { name: "municipal corporation", logo: municipalCorporationLogo },
+    { name: "nhdc", logo: nhdcLogo },
+    { name: "noorus", logo: noorusLogo },
+    { name: "northernrailway", logo: northernRailwayLogo },
+    { name: "powergenerating", logo: powerGeneratingLogo },
+    { name: "punjlloyd", logo: punjlloydLogo },
+    { name: "reliance", logo: relianceLogo },
+    { name: "Rolta", logo: roltaLogo },
+    { name: "rums", logo: rumsLogo },
+    { name: "smec", logo: smecLogo },
+    { name: "ultratech", logo: ultratechLogo },
+    { name: "upjalnigam", logo: upjalnigamLogo },
+    { name: "wateragency", logo: waterAgencyLogo }
   ];
 
   const projects = [
@@ -418,7 +462,6 @@ function Home() {
                   <div className="hmp-partner-logo-container">
                     <img src={partner.logo} alt={partner.name} className="hmp-partner-logo-img" />
                   </div>
-                  <div className="hmp-partner-name">{partner.name}</div>
                 </div>
               ))}
             </div>
