@@ -8,8 +8,8 @@ import hero1Image from '../../assets/ultratech.jpeg';
 import hero2Image from '../../assets/miningdep1.jpg';
 import hero3Image from '../../assets/airport2.jpeg';
 // Import service images for homepage services section
-import dgpsSurveyImage from '../../assets/services/DGPS.png';
-import droneSurveyImage from '../../assets/services/Drone.png';
+import dgpsSurveyImage from '../../assets/services/dgps.png';
+import droneSurveyImage from '../../assets/services/drone.png';
 import cadastralMappingImage from '../../assets/services/Cadastral.png';
 import gisMappingImage from '../../assets/services/GIS.png';
 import topographicalSurveyImage from '../../assets/services/Topographical.png';
