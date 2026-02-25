@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
 
-import dgpsExpertiseImage from '../../assets/services/DGPS.png';
-import droneExpertiseImage from '../../assets/services/Drone.png';
+import dgpsExpertiseImage from '../../assets/services/dgps.png';
+import droneExpertiseImage from '../../assets/services/drone.png';
 import gisExpertiseImage from '../../assets/services/GIS.png';
 import instrumentExpertiseImage from '../../assets/services/Total Station Survey.png';
 
