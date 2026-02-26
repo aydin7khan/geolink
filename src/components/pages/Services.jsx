@@ -14,7 +14,7 @@ import cadastralMappingImage from '../../assets/services/Cadastral.png';
 import gisMappingImage from '../../assets/services/GIS.png';
 import mineSurveyImage from '../../assets/services/Mining.png';
 import asBuiltSurveyImage from '../../assets/services/As-Built.png';
-import roadSurveyImage from '../../assets/services/Road.png';
+import roadSurveyImage from '../../assets/services/road.png';
 import powerTransmissionLineSurveyImage from '../../assets/services/power-transmission.png';
 import irrigationSurveyImage from '../../assets/services/Irrigation.png';
 import pipelineRouteSurveyImage from '../../assets/services/Pipeline.png';
@@ -32,7 +32,7 @@ import lSectionCrossSectionImage from '../../assets/services/L-Section & Cross S
 import alignmentSurveyImage from '../../assets/services/Alignment Survey.png';
 import bathymetricSurveyImage from '../../assets/services/Bathymetric.png';
 import railRoadSurveyImage from '../../assets/services/Rail-Road Survey.png';
-import satelliteImageProcessingImage from '../../assets/services/sattelite.png';
+import satelliteImageProcessingImage from '../../assets/services/satellite.png';
 
 // Animated Counter Component (from Homepage)
 const AnimatedCounter = ({ end, duration = 2000, suffix = "" }) => {
