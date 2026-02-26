@@ -5,68 +5,37 @@ import '../styles/OurWork.css';
 
 // Import images - REPLACE THESE PATHS WITH YOUR ACTUAL IMAGE PATHS
 import heroImage from '../../assets/hero-1.webp';
-import mpidc1 from '../../assets/hero-1.webp';
-import mpidc2 from '../../assets/hero-1.webp';
-import mpidc3 from '../../assets/hero-1.webp';
-import tourism1 from '../../assets/hero-1.webp';
-import tourism2 from '../../assets/hero-1.webp';
-import tourism3 from '../../assets/hero-1.webp';
-import tourism4 from '../../assets/hero-1.webp';
-import water1 from '../../assets/hero-1.webp';
-import water2 from '../../assets/hero-1.webp';
-import water3 from '../../assets/hero-1.webp';
-import bda1 from '../../assets/hero-1.webp';
-import bda2 from '../../assets/hero-1.webp';
-import hpcl1 from '../../assets/hero-1.webp';
-import storm1 from '../../assets/hero-1.webp';
-import mining1 from '../../assets/hero-1.webp';
-import mining2 from '../../assets/hero-1.webp';
-import mining3 from '../../assets/hero-1.webp';
-import defence1 from '../../assets/hero-1.webp';
-import defence2 from '../../assets/hero-1.webp';
-import defence3 from '../../assets/hero-1.webp';
-import municipal1 from '../../assets/hero-1.webp';
-import road1 from '../../assets/hero-1.webp';
-import road2 from '../../assets/hero-1.webp';
-import gcp1 from '../../assets/hero-1.webp';
-import gcp2 from '../../assets/hero-1.webp';
-import cantonment1 from '../../assets/hero-1.webp';
-import solar1 from '../../assets/hero-1.webp';
-import solar2 from '../../assets/hero-1.webp';
-import solar3 from '../../assets/hero-1.webp';
-import airport1 from '../../assets/hero-1.webp';
-import reliance1 from '../../assets/hero-1.webp';
-import reliance2 from '../../assets/hero-1.webp';
-import jubilee1 from '../../assets/hero-1.webp';
-import forest1 from '../../assets/hero-1.webp';
-import iitm1 from '../../assets/hero-1.webp';
-import dewas1 from '../../assets/hero-1.webp';
-import ultratech1 from '../../assets/hero-1.webp';
-import ultratech2 from '../../assets/hero-1.webp';
-import auro1 from '../../assets/hero-1.webp';
-import auro2 from '../../assets/hero-1.webp';
-import mppgcl1 from '../../assets/hero-1.webp';
+import mpidcImage from '../../assets/hero-1.webp';
+import dgmImage from '../../assets/hero-1.webp';
+import ultratechImage from '../../assets/hero-1.webp';
+import sarniImage from '../../assets/hero-1.webp';
+import rewaImage from '../../assets/hero-1.webp';
+import omkareshwarImage from '../../assets/hero-1.webp';
+
+// Gallery images (other projects without names)
+import gallery1 from '../../assets/hero-1.webp';
+import gallery2 from '../../assets/hero-1.webp';
+import gallery3 from '../../assets/hero-1.webp';
+import gallery4 from '../../assets/hero-1.webp';
+import gallery5 from '../../assets/hero-1.webp';
+import gallery6 from '../../assets/hero-1.webp';
+import gallery7 from '../../assets/hero-1.webp';
+import gallery8 from '../../assets/hero-1.webp';
+import gallery9 from '../../assets/hero-1.webp';
+import gallery10 from '../../assets/hero-1.webp';
+import gallery11 from '../../assets/hero-1.webp';
+import gallery12 from '../../assets/hero-1.webp';
+
+// Methodology icons
 import dgpsIcon from '../../assets/hero-1.webp';
 import totalStationIcon from '../../assets/hero-1.webp';
 import droneIcon from '../../assets/hero-1.webp';
 import gisIcon from '../../assets/hero-1.webp';
 
 function OurWork() {
-  const [activeFilter, setActiveFilter] = useState('all');
-
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-  };
-
-  const fadeInLeft = {
-    hidden: { opacity: 0, x: -30 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
-  };
-
-  const fadeInRight = {
-    hidden: { opacity: 0, x: 30 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
   };
 
   const staggerContainer = {
@@ -83,6 +52,46 @@ function OurWork() {
     hidden: { opacity: 0, scale: 1.1 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } }
   };
+
+  // Featured projects data
+  const featuredProjects = [
+    {
+      name: 'MPIDC',
+      fullName: 'MP Industrial Development Corporation',
+      image: mpidcImage,
+      description: 'Comprehensive surveying and cadastral mapping services for industrial development projects across Madhya Pradesh.'
+    },
+    {
+      name: 'DGM',
+      fullName: 'District Geology & Mining',
+      image: dgmImage,
+      description: 'Precision boundary demarcation and cadastral mapping for mining operations with DGPS technology.'
+    },
+    {
+      name: 'ULTRATECH',
+      fullName: 'UltraTech Cement Limited',
+      image: ultratechImage,
+      description: 'DGPS survey and geo-referenced cadastral mapping for limestone mining operations.'
+    },
+    {
+      name: 'SARNI',
+      fullName: 'MPPGCL Sarni Power Plant',
+      image: sarniImage,
+      description: 'Advanced drone survey for thermal power plant facility with high-resolution aerial mapping.'
+    },
+    {
+      name: 'Rewa Ultra Mega Solar Limited',
+      fullName: 'Asia\'s Largest Solar Park',
+      image: rewaImage,
+      description: 'Large-scale boundary demarcation covering 5000+ hectares across five districts.'
+    },
+    {
+      name: 'Omkareshwar Tourism Development',
+      fullName: 'MP State Tourism Development Corporation',
+      image: omkareshwarImage,
+      description: 'DGPS, drone survey, and GIS base map preparation for sacred pilgrimage destination.'
+    }
+  ];
 
   return (
     <div className="wrk-page">
@@ -201,8 +210,8 @@ function OurWork() {
         </div>
       </section>
 
-      {/* PROJECT SHOWCASE - GOVERNMENT & PSU SECTOR */}
-      <section className="wrk-projects-section wrk-section-government">
+      {/* FEATURED PROJECTS SECTION */}
+      <section className="wrk-featured-projects-section">
         <div className="wrk-container">
           <motion.h2 
             className="wrk-section-title"
@@ -211,290 +220,43 @@ function OurWork() {
             viewport={{ once: true, margin: "-50px" }}
             variants={fadeInUp}
           >
-            Government & Public Sector Projects
+            Featured Projects
           </motion.h2>
 
-          {/* MP Industrial Development Corporation */}
           <motion.div 
-            className="wrk-project-block"
+            className="wrk-featured-grid"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
+            variants={staggerContainer}
           >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Government</div>
-              <h3 className="wrk-project-title">MP Industrial Development Corporation (MPIDC), Bhopal</h3>
-              <p className="wrk-project-description">
-                Comprehensive surveying and cadastral mapping services for multiple industrial development projects across Madhya Pradesh, supporting infrastructure planning and land acquisition processes.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-3col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={mpidc1} alt="Mohasa Project" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
+            {featuredProjects.map((project, index) => (
+              <motion.div 
+                key={index}
+                className="wrk-featured-card"
+                variants={scaleIn}
+              >
+                <div className="wrk-featured-image-container">
+                  <img 
+                    src={project.image} 
+                    alt={project.name} 
+                    className="wrk-featured-image" 
+                  />
+                  <div className="wrk-featured-overlay"></div>
+                  <div className="wrk-featured-badge">{project.name}</div>
                 </div>
-                <div className="wrk-project-info">
-                  <h4>Mohasa Project</h4>
-                  <p>Industrial zone survey & mapping</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={mpidc2} alt="Bagroda Project" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Bagroda Project</h4>
-                  <p>Topographical survey & boundary demarcation</p>
+                <div className="wrk-featured-content">
+                  <h3 className="wrk-featured-title">{project.fullName}</h3>
+                  <p className="wrk-featured-description">{project.description}</p>
                 </div>
               </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={mpidc3} alt="Mandideep Project" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Mandideep Project</h4>
-                  <p>DGPS survey & GIS mapping</p>
-                </div>
-              </motion.div>
-            </motion.div>
-            <div className="wrk-project-tags">
-              <span className="wrk-tag">Achharpura Project</span>
-              <span className="wrk-tag">Kiratpur Project</span>
-              <span className="wrk-tag">Binapur Project</span>
-            </div>
-          </motion.div>
-
-          {/* MP Tourism Development Corporation */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Tourism</div>
-              <h3 className="wrk-project-title">MP State Tourism Development Corporation Ltd, Bhopal</h3>
-              <p className="wrk-project-description">
-                Advanced DGPS, drone survey, and GIS base map preparation for the sacred Omkareshwar pilgrimage destination, enabling comprehensive infrastructure planning and heritage conservation.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-4col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={tourism1} alt="Omkareshwar Mandhata" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Mandhata Village Side</h4>
-                  <p>Drone survey & GIS mapping</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={tourism2} alt="Omkareshwar Dam" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Dam Side</h4>
-                  <p>DGPS & cadastral mapping</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={tourism3} alt="Omkareshwar Sangam" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Sangam Side</h4>
-                  <p>Topographical survey</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={tourism4} alt="Omkareshwar Forest" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Forest Side</h4>
-                  <p>GIS base map preparation</p>
-                </div>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-
-          {/* MP Water Resource Department */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Water Resources</div>
-              <h3 className="wrk-project-title">MP Water Resource Department (MPWRD), Sagar</h3>
-              <p className="wrk-project-description">
-                Precision contour and topographical surveys for major irrigation infrastructure, supporting dam safety assessments and water management planning.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-3col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={water1} alt="Sindhoor Dam" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Sindhoor Dam</h4>
-                  <p>Contour & topographical survey</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={water2} alt="Tulsipar Dam" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Tulsipar Dam</h4>
-                  <p>Contour & topographical survey</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={water3} alt="Khatola Dam" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Khatola Dam</h4>
-                  <p>Contour & topographical survey</p>
-                </div>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-
-          {/* Bhopal Development Authority */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Urban Development</div>
-              <h3 className="wrk-project-title">Bhopal Development Authority (BDA), Bhopal</h3>
-              <p className="wrk-project-description">
-                Comprehensive surveying services for strategic urban expansion zones including the flagship Aerocity project and multiple integrated township developments.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-2col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={bda1} alt="Aerocity Misrod" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Aerocity Misrod Development</h4>
-                  <p>Large-scale urban planning survey</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={bda2} alt="Badwai Godarmau" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Badwai & Godarmau</h4>
-                  <p>Township development surveys</p>
-                </div>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-
-          {/* Municipal Corporation Bhopal */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Municipal</div>
-              <h3 className="wrk-project-title">Municipal Corporation, Bhopal</h3>
-              <p className="wrk-project-description">
-                Large-scale urban survey project covering 198 illegal colonies, providing critical data for urban planning, regularization, and municipal infrastructure development.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={municipal1} alt="198 Illegal Colonies Survey" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-                <div className="wrk-featured-badge">
-                  <span className="wrk-badge-number">198</span>
-                  <span className="wrk-badge-text">Colonies Surveyed</span>
-                </div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>198 Illegal Colonies Survey</h4>
-                <p>Comprehensive cadastral mapping, boundary identification, and GIS database creation for urban regularization initiative</p>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          {/* Cantonment Boards */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Cantonment</div>
-              <h3 className="wrk-project-title">Cantonment Board Survey Projects</h3>
-              <p className="wrk-project-description">
-                Precision surveying services for military cantonment areas across multiple states, ensuring compliance with defence land management requirements.
-              </p>
-            </div>
-            <div className="wrk-project-tags">
-              <span className="wrk-tag">Cantonment Board Sagar (MP)</span>
-              <span className="wrk-tag">Cantonment Board Nainital (Uttarakhand)</span>
-              <span className="wrk-tag">Cantonment Board Agra (UP)</span>
-            </div>
+            ))}
           </motion.div>
         </div>
       </section>
 
-      {/* PROJECT SHOWCASE - INFRASTRUCTURE SECTOR */}
-      <section className="wrk-projects-section wrk-section-infrastructure">
+      {/* PROJECT GALLERY - OTHER PROJECTS */}
+      <section className="wrk-gallery-section">
         <div className="wrk-container">
           <motion.h2 
             className="wrk-section-title"
@@ -503,767 +265,72 @@ function OurWork() {
             viewport={{ once: true, margin: "-50px" }}
             variants={fadeInUp}
           >
-            Infrastructure & Development Projects
+            More Projects
           </motion.h2>
 
-          {/* Road Surveys */}
-          <motion.div 
-            className="wrk-project-block"
+          <motion.p 
+            className="wrk-gallery-intro"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeInUp}
           >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Transportation</div>
-              <h3 className="wrk-project-title">Road Survey Projects</h3>
-              <p className="wrk-project-description">
-                Extensive topographical and alignment surveys spanning approximately 5000 KM across multiple agencies, supporting highway development, rural connectivity, and transportation infrastructure planning.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-2col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item wrk-item-large" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={road1} alt="Highway Survey" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                  <div className="wrk-featured-badge wrk-badge-inline">
-                    <span className="wrk-badge-number">5000+</span>
-                    <span className="wrk-badge-text">KM Surveyed</span>
-                  </div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Highway & Road Development</h4>
-                  <p>Alignment surveys, contour mapping, cross-section analysis</p>
-                </div>
-              </motion.div>
+            A glimpse into our diverse portfolio across government, infrastructure, mining, and industrial sectors.
+          </motion.p>
 
-              <motion.div className="wrk-project-item wrk-item-large" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={road2} alt="Rural Connectivity" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Rural Connectivity Projects</h4>
-                  <p>PMGSY & state highway surveys across multiple districts</p>
-                </div>
-              </motion.div>
+          <motion.div 
+            className="wrk-gallery-grid"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
+          >
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery1} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-          </motion.div>
 
-          {/* HPCL Gas Pipeline */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Energy Infrastructure</div>
-              <h3 className="wrk-project-title">HPCL Gas Pipeline (MDPL) under Punj Lloyd</h3>
-              <p className="wrk-project-description">
-                Pipeline route survey and cadastral mapping for major gas transmission infrastructure project, ensuring accurate alignment and land acquisition support.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={hpcl1} alt="HPCL Gas Pipeline" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Pipeline Route Survey & Mapping</h4>
-                <p>DGPS-based alignment survey, topographical mapping, and land documentation</p>
-              </div>
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery2} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-          </motion.div>
 
-          {/* Storm Water Management */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Urban Infrastructure</div>
-              <h3 className="wrk-project-title">Storm Water Management for Bhopal – Meinhardt</h3>
-              <p className="wrk-project-description">
-                Comprehensive topographical survey and drainage network mapping for Bhopal's storm water management system, supporting flood mitigation infrastructure design.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={storm1} alt="Storm Water Management" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Drainage System Survey & Mapping</h4>
-                <p>Contour mapping, catchment analysis, and drainage network documentation</p>
-              </div>
+            <motion.div className="wrk-gallery-item wrk-gallery-large" variants={imageReveal}>
+              <img src={gallery3} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-          </motion.div>
 
-          {/* Ground Control Points - Chandarpur */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">PWD Maharashtra</div>
-              <h3 className="wrk-project-title">Ground Control Points – PWD Chandarpur (MH)</h3>
-              <p className="wrk-project-description">
-                Establishment of 450 KM ground control network for Magnasoft Consulting India Pvt. Ltd., providing precision reference points for large-scale highway mapping projects.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={gcp1} alt="GCP Chandarpur" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-                <div className="wrk-featured-badge">
-                  <span className="wrk-badge-number">450</span>
-                  <span className="wrk-badge-text">KM Network</span>
-                </div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Magnasoft Consulting India Pvt. Ltd.</h4>
-                <p>DGPS-based ground control point establishment for highway corridor mapping</p>
-              </div>
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery4} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-          </motion.div>
 
-          {/* Ground Control Points - Gondia */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">PWD Maharashtra</div>
-              <h3 className="wrk-project-title">Ground Control Points – PWD Gondia (MH)</h3>
-              <p className="wrk-project-description">
-                Precision ground control network establishment for Magnasoft Consulting India Pvt. Ltd., supporting highway development projects in Gondia district.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={gcp2} alt="GCP Gondia" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Magnasoft Consulting India Pvt. Ltd.</h4>
-                <p>High-precision GCP network for transportation infrastructure mapping</p>
-              </div>
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery5} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-          </motion.div>
 
-          {/* Dewas Super Corridor */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Urban Corridor</div>
-              <h3 className="wrk-project-title">Dewas Super Corridor Survey</h3>
-              <p className="wrk-project-description">
-                Comprehensive topographical and alignment survey for Dewas Development Authority covering 480 hectares, supporting major urban corridor development planning.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={dewas1} alt="Dewas Super Corridor" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-                <div className="wrk-featured-badge">
-                  <span className="wrk-badge-number">480</span>
-                  <span className="wrk-badge-text">Hectares</span>
-                </div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Dewas Development Authority</h4>
-                <p>Large-scale survey for integrated urban corridor infrastructure</p>
-              </div>
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery6} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
 
-      {/* PROJECT SHOWCASE - DEFENCE SECTOR */}
-      <section className="wrk-projects-section wrk-section-defence">
-        <div className="wrk-container">
-          <motion.h2 
-            className="wrk-section-title"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={fadeInUp}
-          >
-            Defence & Security Projects
-          </motion.h2>
-
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Ministry of Defence</div>
-              <h3 className="wrk-project-title">Defence Establishment Survey Projects</h3>
-              <p className="wrk-project-description">
-                Precision surveying and mapping services for critical defence installations including firing ranges and airforce facilities across multiple states, adhering to stringent security and accuracy protocols.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-3col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={defence1} alt="Babina Firing Range" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>BFR Babina</h4>
-                  <p>DEO Bhopal - Firing range survey & mapping</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={defence2} alt="Jamnagar Airforce Range" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Jamnagar Airforce Range</h4>
-                  <p>Gujarat - Airforce facility boundary survey</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={defence3} alt="Okha Range" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Okha Range</h4>
-                  <p>Gujarat - Defence installation mapping</p>
-                </div>
-              </motion.div>
+            <motion.div className="wrk-gallery-item wrk-gallery-large" variants={imageReveal}>
+              <img src={gallery7} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-            <div className="wrk-project-additional-info">
-              <p><strong>Additional Defence Projects:</strong> Surveying services for defence establishments across Bhopal, Sagar, Agra, Gwalior, Ahmedabad, and Nainital with strict compliance to security protocols.</p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
 
-      {/* PROJECT SHOWCASE - ENERGY SECTOR */}
-      <section className="wrk-projects-section wrk-section-energy">
-        <div className="wrk-container">
-          <motion.h2 
-            className="wrk-section-title"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={fadeInUp}
-          >
-            Energy & Renewable Projects
-          </motion.h2>
-
-          {/* Rewa Ultra Mega Solar */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Solar Energy</div>
-              <h3 className="wrk-project-title">Rewa Ultra Mega Solar Limited (RUMS), Bhopal</h3>
-              <p className="wrk-project-description">
-                Large-scale outer boundary demarcation for one of Asia's largest solar power projects, covering over 5000 hectares across five districts with DGPS precision and comprehensive cadastral mapping.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-3col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={solar1} alt="Shajapur Solar" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                  <div className="wrk-project-area-badge">258.6 Ha</div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Shajapur</h4>
-                  <p>Boundary demarcation - 258.595 Hectare</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={solar2} alt="Agar Solar" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                  <div className="wrk-project-area-badge">808 Ha</div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Agar</h4>
-                  <p>Boundary demarcation - 808.034 Hectare</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={solar3} alt="Chhatarpur Solar" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                  <div className="wrk-project-area-badge">2168 Ha</div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Chhatarpur</h4>
-                  <p>Boundary demarcation - 2168 Hectare</p>
-                </div>
-              </motion.div>
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery8} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-            <div className="wrk-project-tags">
-              <span className="wrk-tag">Keoti - 628.970 Hectare</span>
-              <span className="wrk-tag">Morena - 1503.279 Hectare</span>
-              <span className="wrk-tag">Total Area: 5367+ Hectares</span>
-            </div>
-          </motion.div>
 
-          {/* MPPGCL Sarni */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Power Generation</div>
-              <h3 className="wrk-project-title">MPPGCL, Sarni</h3>
-              <p className="wrk-project-description">
-                Advanced drone survey for Madhya Pradesh Power Generating Company Limited's thermal power plant facility, providing high-resolution aerial imagery and 3D modeling for infrastructure planning.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={mppgcl1} alt="MPPGCL Sarni" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Thermal Power Plant Drone Survey</h4>
-                <p>UAV-based aerial survey, orthophoto generation, and facility mapping</p>
-              </div>
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery9} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-          </motion.div>
-        </div>
-      </section>
 
-      {/* PROJECT SHOWCASE - MINING & INDUSTRIAL SECTOR */}
-      <section className="wrk-projects-section wrk-section-mining">
-        <div className="wrk-container">
-          <motion.h2 
-            className="wrk-section-title"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={fadeInUp}
-          >
-            Mining & Industrial Projects
-          </motion.h2>
-
-          {/* Mining Surveys */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Mining</div>
-              <h3 className="wrk-project-title">Mining Survey Portfolio</h3>
-              <p className="wrk-project-description">
-                Extensive portfolio of over 100 mining surveys across Madhya Pradesh and neighboring states, providing DGPS-based boundary demarcation, cadastral mapping, and geo-referenced mine area documentation for limestone, coal, and mineral extraction operations.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-3col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item wrk-item-large" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={mining1} alt="Mining Survey" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                  <div className="wrk-featured-badge wrk-badge-inline">
-                    <span className="wrk-badge-number">100+</span>
-                    <span className="wrk-badge-text">Surveys</span>
-                  </div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Boundary Demarcation</h4>
-                  <p>DGPS-based mining lease boundary surveys</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item wrk-item-large" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={mining2} alt="Cadastral Mapping" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Cadastral Mapping</h4>
-                  <p>Geo-referenced mine area documentation</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item wrk-item-large" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={mining3} alt="Boundary Pillars" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Boundary Pillars</h4>
-                  <p>Permanent boundary marker installation</p>
-                </div>
-              </motion.div>
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery10} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-          </motion.div>
 
-          {/* UltraTech Cement */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Industrial</div>
-              <h3 className="wrk-project-title">UltraTech Cement Limited</h3>
-              <p className="wrk-project-description">
-                Comprehensive DGPS survey, geo-referenced cadastral mapping, boundary demarcation, and boundary pillar installation for limestone mining operations supporting cement manufacturing.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-2col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={ultratech1} alt="UltraTech Survey" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Mining Lease Survey</h4>
-                  <p>DGPS & cadastral mapping</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={ultratech2} alt="UltraTech Boundary" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Boundary Demarcation</h4>
-                  <p>Pillar installation & documentation</p>
-                </div>
-              </motion.div>
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery11} alt="Project" className="wrk-gallery-image" />
             </motion.div>
-          </motion.div>
 
-          {/* Auro Natural Resources */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Industrial</div>
-              <h3 className="wrk-project-title">Auro Natural Resources Pvt. Ltd.</h3>
-              <p className="wrk-project-description">
-                Integrated DGPS survey, drone-based aerial mapping, geo-referenced cadastral mapping, boundary demarcation, and boundary pillar establishment for mineral extraction operations.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-grid wrk-grid-2col"
-              variants={staggerContainer}
-            >
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={auro1} alt="Auro Drone Survey" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>Drone Survey</h4>
-                  <p>UAV-based aerial mapping & 3D modeling</p>
-                </div>
-              </motion.div>
-
-              <motion.div className="wrk-project-item" variants={scaleIn}>
-                <div className="wrk-project-image-wrapper">
-                  <img src={auro2} alt="Auro DGPS Survey" className="wrk-project-image" />
-                  <div className="wrk-project-image-overlay"></div>
-                </div>
-                <div className="wrk-project-info">
-                  <h4>DGPS & Boundary Survey</h4>
-                  <p>Cadastral mapping & pillar installation</p>
-                </div>
-              </motion.div>
-            </motion.div>
-          </motion.div>
-
-          {/* Reliance Industries - Sehore */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Industrial</div>
-              <h3 className="wrk-project-title">Reliance Industries – Sehore</h3>
-              <p className="wrk-project-description">
-                Precision topographical survey and contour plan generation for 100-acre industrial facility, supporting infrastructure planning and site development for major industrial project.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={reliance1} alt="Reliance Sehore" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-                <div className="wrk-featured-badge">
-                  <span className="wrk-badge-number">100</span>
-                  <span className="wrk-badge-text">Acres</span>
-                </div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Topography & Contour Plan</h4>
-                <p>Complete site survey for industrial development planning</p>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          {/* Reliance Industries - Bhopal */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Industrial</div>
-              <h3 className="wrk-project-title">Reliance Industries – Bhopal</h3>
-              <p className="wrk-project-description">
-                Comprehensive topographical survey and contour mapping for 50-acre industrial site, providing detailed elevation data and site characteristics for facility design and construction.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={reliance2} alt="Reliance Bhopal" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-                <div className="wrk-featured-badge">
-                  <span className="wrk-badge-number">50</span>
-                  <span className="wrk-badge-text">Acres</span>
-                </div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Topography & Contour Plan</h4>
-                <p>Industrial facility site characterization & mapping</p>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          {/* Jubilee Beverages */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Industrial</div>
-              <h3 className="wrk-project-title">Jubilee Beverages Limited</h3>
-              <p className="wrk-project-description">
-                Outer boundary demarcation and contour plan preparation for 72-acre beverage manufacturing facility, ensuring accurate site documentation and infrastructure planning support.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={jubilee1} alt="Jubilee Beverages" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-                <div className="wrk-featured-badge">
-                  <span className="wrk-badge-number">72</span>
-                  <span className="wrk-badge-text">Acres</span>
-                </div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Boundary Demarcation & Contour Plan</h4>
-                <p>Manufacturing facility boundary & topographical survey</p>
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* PROJECT SHOWCASE - SPECIALIZED PROJECTS */}
-      <section className="wrk-projects-section wrk-section-specialized">
-        <div className="wrk-container">
-          <motion.h2 
-            className="wrk-section-title"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={fadeInUp}
-          >
-            Specialized Survey Projects
-          </motion.h2>
-
-          {/* Airport NOC */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Aviation</div>
-              <h3 className="wrk-project-title">Airport NOC Clearance Work</h3>
-              <p className="wrk-project-description">
-                Specialized surveying services for Airport Authority of India NOC (No Objection Certificate) clearances, ensuring compliance with aviation safety regulations for structures near airport zones across multiple locations.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={airport1} alt="Airport NOC Work" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-                <div className="wrk-featured-badge">
-                  <span className="wrk-badge-number">50+</span>
-                  <span className="wrk-badge-text">NOC Clearances</span>
-                </div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Aviation Compliance Surveys</h4>
-                <p>Height verification, obstacle assessment, and regulatory compliance documentation</p>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          {/* Tree Counting - Forest */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Environmental</div>
-              <h3 className="wrk-project-title">Tree Counting – Forest Area Lohapathar, Sehore</h3>
-              <p className="wrk-project-description">
-                Comprehensive tree census and forest area survey covering 182 acres, utilizing advanced survey techniques for accurate tree enumeration and forest density assessment for environmental compliance.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={forest1} alt="Forest Tree Counting" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-                <div className="wrk-featured-badge">
-                  <span className="wrk-badge-number">182</span>
-                  <span className="wrk-badge-text">Acres</span>
-                </div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Forest Census & Documentation</h4>
-                <p>Tree enumeration, species identification, and GIS-based forest mapping</p>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          {/* IITM Pune */}
-          <motion.div 
-            className="wrk-project-block"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            <div className="wrk-project-header">
-              <div className="wrk-project-badge">Research Institution</div>
-              <h3 className="wrk-project-title">Indian Institute of Tropical Meteorology, Pune</h3>
-              <p className="wrk-project-description">
-                Precision topographical and contour survey for 100-acre research campus, supporting infrastructure development planning for premier meteorological research institution.
-              </p>
-            </div>
-            <motion.div 
-              className="wrk-project-featured"
-              variants={scaleIn}
-            >
-              <div className="wrk-featured-image-wrapper">
-                <img src={iitm1} alt="IITM Pune" className="wrk-featured-image" />
-                <div className="wrk-featured-overlay"></div>
-                <div className="wrk-featured-badge">
-                  <span className="wrk-badge-number">100</span>
-                  <span className="wrk-badge-text">Acres</span>
-                </div>
-              </div>
-              <div className="wrk-featured-info">
-                <h4>Topographical & Contour Survey</h4>
-                <p>Research campus site characterization and infrastructure planning support</p>
-              </div>
+            <motion.div className="wrk-gallery-item" variants={imageReveal}>
+              <img src={gallery12} alt="Project" className="wrk-gallery-image" />
             </motion.div>
           </motion.div>
         </div>
@@ -1290,7 +357,7 @@ function OurWork() {
             variants={fadeInUp}
           >
             <p>
-              Every project showcased above has been executed using state-of-the-art surveying technology and rigorous quality control protocols. Our ISO 9001-2015, ISO/IEC 27001-2022, and ISO 45001-2018 certified processes ensure maximum accuracy, data security, and occupational safety across all operations.
+              Every project is executed using state-of-the-art surveying technology and rigorous quality control protocols. Our ISO 9001-2015, ISO/IEC 27001-2022, and ISO 45001-2018 certified processes ensure maximum accuracy, data security, and occupational safety across all operations.
             </p>
           </motion.div>
 
@@ -1369,95 +436,6 @@ function OurWork() {
             <p>
               All survey deliverables are prepared in compliance with government standards, ministry guidelines, and client specifications. Our documentation includes geo-referenced maps, survey reports, boundary descriptions, coordinate listings, and digital data in client-specified formats (AutoCAD DWG, GIS shapefiles, KML, PDF).
             </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* VISUAL GALLERY SECTION */}
-      <section className="wrk-gallery-section">
-        <div className="wrk-container">
-          <motion.h2 
-            className="wrk-section-title"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            variants={fadeInUp}
-          >
-            Project Gallery
-          </motion.h2>
-
-          <motion.p 
-            className="wrk-gallery-intro"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeInUp}
-          >
-            Visual documentation from our diverse portfolio showcasing drone imagery, survey maps, field operations, and project deliverables across government, infrastructure, mining, and industrial sectors.
-          </motion.p>
-
-          <motion.div 
-            className="wrk-gallery-grid"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
-            <motion.div className="wrk-gallery-item wrk-gallery-large" variants={imageReveal}>
-              <img src={solar1} alt="Solar Project Aerial" className="wrk-gallery-image" />
-              <div className="wrk-gallery-overlay">
-                <span className="wrk-gallery-label">Aerial Survey - Solar Farm</span>
-              </div>
-            </motion.div>
-
-            <motion.div className="wrk-gallery-item" variants={imageReveal}>
-              <img src={mining1} alt="Mining Survey" className="wrk-gallery-image" />
-              <div className="wrk-gallery-overlay">
-                <span className="wrk-gallery-label">Mining Boundary Survey</span>
-              </div>
-            </motion.div>
-
-            <motion.div className="wrk-gallery-item" variants={imageReveal}>
-              <img src={road1} alt="Highway Survey" className="wrk-gallery-image" />
-              <div className="wrk-gallery-overlay">
-                <span className="wrk-gallery-label">Highway Alignment</span>
-              </div>
-            </motion.div>
-
-            <motion.div className="wrk-gallery-item" variants={imageReveal}>
-              <img src={water1} alt="Dam Survey" className="wrk-gallery-image" />
-              <div className="wrk-gallery-overlay">
-                <span className="wrk-gallery-label">Dam Topographical Survey</span>
-              </div>
-            </motion.div>
-
-            <motion.div className="wrk-gallery-item wrk-gallery-large" variants={imageReveal}>
-              <img src={tourism1} alt="GIS Mapping" className="wrk-gallery-image" />
-              <div className="wrk-gallery-overlay">
-                <span className="wrk-gallery-label">GIS Base Map - Tourism</span>
-              </div>
-            </motion.div>
-
-            <motion.div className="wrk-gallery-item" variants={imageReveal}>
-              <img src={defence1} alt="Defence Survey" className="wrk-gallery-image" />
-              <div className="wrk-gallery-overlay">
-                <span className="wrk-gallery-label">Defence Installation</span>
-              </div>
-            </motion.div>
-
-            <motion.div className="wrk-gallery-item" variants={imageReveal}>
-              <img src={ultratech1} alt="Industrial Survey" className="wrk-gallery-image" />
-              <div className="wrk-gallery-overlay">
-                <span className="wrk-gallery-label">Industrial Facility Survey</span>
-              </div>
-            </motion.div>
-
-            <motion.div className="wrk-gallery-item" variants={imageReveal}>
-              <img src={bda1} alt="Urban Development" className="wrk-gallery-image" />
-              <div className="wrk-gallery-overlay">
-                <span className="wrk-gallery-label">Urban Development Zone</span>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </section>

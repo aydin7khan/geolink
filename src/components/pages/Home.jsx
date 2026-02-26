@@ -216,10 +216,21 @@ function Home() {
   ];
 
   const testimonials = [
-    { name: "Rajesh Kumar", role: "Project Manager, MPIDC", rating: 5, text: "Professional service delivery with exceptional accuracy. Their DGPS and cadastral mapping work has been instrumental in our industrial development projects.", avatar: "👨‍💼" },
-    { name: "Priya Sharma", role: "Director, Solar Projects", rating: 5, text: "Geolink's technical expertise and timely execution made our large-scale solar project boundary demarcation seamless. Highly recommended for precision work.", avatar: "👩‍💼" },
-    { name: "Amit Patel", role: "Tourism Development Officer", rating: 5, text: "Outstanding drone survey capabilities and GIS mapping services. Their team's professionalism and advanced equipment ensure reliable results every time.", avatar: "👨‍💻" },
-    { name: "Sunita Verma", role: "Mining Engineer", rating: 5, text: "Excellent mine survey services with accurate boundary fixing and cadastral mapping. The team is highly skilled and delivers on time consistently.", avatar: "👩‍🔬" }
+    { name: "Nauman Zafar", rating: 5, text: "I had a great experience with this land survey company. The team was highly professional, punctual, and very knowledgeable about their work. They explained the entire process clearly and completed the survey with accuracy and attention to detail. The reports were delivered on time and were easy to understand. I truly appreciate their honesty and commitment to quality. I would definitely recommend their services to anyone looking for reliable and trustworthy land surveying.", avatar: "NZ" },
+    { name: "Ravi Shukla", rating: 5, text: "best quality service provider . they are very efficient and professional in work to complete in time given time frame best wishes keep it up Thanks", avatar: "RS" },
+    { name: "Nikhat Bano", rating: 5, text: "Very good work and professional behavior.", avatar: "NB" },
+    { name: "Sanjay Ingle", rating: 5, text: "I m fully satisfied with the services specially for accuracy", avatar: "SI" },
+    { name: "Adil Khan", rating: 5, text: "Geolink survey has a very good knowledge of geo mapping and geo refrence... And proper and accurate survey. In bhopal..", avatar: "AK" },
+    { name: "Hemant Vagare", rating: 5, text: "DGPS & Total Station training program available for students. Interested students must visit.", avatar: "HV" },
+    { name: "Mohan Meena", rating: 5, text: "Excellent services provided by the company", avatar: "MM" },
+    { name: "Mohit Malviya", rating: 5, text: "Working with geolink from long time... Good services", avatar: "MM" },
+    { name: "Syed Sajid", rating: 5, text: "Excellent service", avatar: "SS" },
+    { name: "Sourabh", rating: 4, text: "All professional for GIs & DGPS", avatar: "S" },
+    { name: "Property Creator", rating: 5, text: "👍👍", avatar: "PC" },
+    { name: "Faraz Khan", rating: 5, text: "Best survey company", avatar: "FK" },
+    { name: "Suresh Singh Add. Tehsildar Rajgarh", rating: 5, text: "Nice", avatar: "SS" },
+    { name: "Saad Hashmi", rating: 5, text: "Positive Professionalism", avatar: "SH" },
+    { name: "Aydin Khan", rating: 5, text: "Good and professional work.", avatar: "AK" }
   ];
 
   // Hero slider effect with proper progress tracking
@@ -512,7 +523,6 @@ function Home() {
                     <div className="hmp-reviewer-avatar">{testimonials[currentTestimonial].avatar}</div>
                     <div className="hmp-reviewer-info">
                       <div className="hmp-reviewer-name">{testimonials[currentTestimonial].name}</div>
-                      <div className="hmp-reviewer-role">{testimonials[currentTestimonial].role}</div>
                     </div>
                     <div className="hmp-google-logo">G</div>
                   </div>
