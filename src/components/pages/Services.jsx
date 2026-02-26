@@ -6,8 +6,8 @@ import '../styles/Services.css';
 import heroImage from '../../assets/hero-1.webp';
 
 // Service card images (one per service)
-import dgpsSurveyImage from '../../assets/services/DGPS.png';
-import droneSurveyImage from '../../assets/services/Drone.png';
+import dgpsSurveyImage from '../../assets/services/dgps.png';
+import droneSurveyImage from '../../assets/services/drone.png';
 import topographicalSurveyImage from '../../assets/services/Topographical.png';
 import contourSurveyImage from '../../assets/services/Contour.png';
 import cadastralMappingImage from '../../assets/services/Cadastral.png';
