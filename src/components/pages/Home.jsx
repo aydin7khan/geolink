@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 // Import hero images
-import hero1Image from '../../assets/ultratech.jpeg';
-import hero2Image from '../../assets/miningdep1.jpg';
+import hero1Image from '../../assets/Mining.jpeg';
+import hero2Image from '../../assets/ultratech2.jpeg';
 import hero3Image from '../../assets/airport2.jpeg';
 // Import service images for homepage services section
 import dgpsSurveyImage from '../../assets/services/dgps.png';
@@ -124,7 +124,7 @@ function Home() {
       primaryBtn: "Our Technology",
       secondaryBtn: "Portfolio",
       primaryLink: "/services",
-      secondaryLink: "/portfolio",
+      secondaryLink: "/our-work",
       desktopImage: hero2Image,
       mobileImage: hero2Image
     },

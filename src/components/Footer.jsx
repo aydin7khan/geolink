@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 // Import logo
-import geolinkLogo from '../assets/geolinklogo.png';
+import geolinkLogo from '../assets/geolink_logo.png';
 
 // Import the styles for this footer
 import './styles/Footer.css';

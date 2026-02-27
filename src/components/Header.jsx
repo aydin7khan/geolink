@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 
 // Import the logo image
-import geolinkLogo from '../assets/geolinklogo.png';
+import geolinkLogo from '../assets/geolink_logo.png';
 
 // Import the styles for this header
 import './styles/Header.css';
@@ -282,7 +282,6 @@ function Header() {
                 <h1 className="hdr-logo-title">Geolink</h1>
               </div>
             </div>
-            <p className="hdr-tagline">Surveying & Geospatial Services</p>
           </motion.div>
 
           {/* Desktop Navigation Menu */}
